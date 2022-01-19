@@ -1,7 +1,94 @@
+/* content */
+.content-wrap{
+  height: auto;
+}
+.content{
+  margin-top: 40px;
+  margin-left: 210px;
+  height: auto;
+}
+.content-view{
+  margin-top: 40px;
+  margin-left: 30px;
+  height: auto;
+}
+.content-main{
+  padding: 0 20px 0 40px;
+}
+.content-title{
+  margin: 40px 0 40px 0;
+  padding-bottom: 10px;
+  border-bottom:2px solid #444;
+}
+.content-title h3{
+  margin: 20px 0 10px 0;
+  font-size: 20px;
+}
+/* 사이드 메뉴 열고 닫기 */
+.sideButton{
+  position: absolute;
+  top: 105px;
+  left: 210px;
+  background: #444;
+  z-index: 10;
+  padding: 5px 2px 8px 2px;
+}
+.sideButton::before{
+  font-size: 14px;
+  content: '<';
+  color: #fff;
+}
+.sideButton-ac{
+  position: absolute;
+  top: 105px;
+  left: 0px;
+  background-color: #444;
+  padding: 5px 2px 8px 2px;
+}
+.sideButton-ac::before{
+  font-size: 14px;
+  content: '>';
+  color: #fff;
+  
+}
+.itemList-hidden{
+  display: none;
+}
+/* 사이드 목록 모두 열고 닽기 */
+.itemListButton{
+  position:absolute;
+  top: 135px;
+  left: 210px;
+  background-color: #444;
+  z-index: 10;
+  padding: 5px 0 8px 0;
+}
+.itemListButton::before{
+  font-size: 15px;
+  color: #ffffff;
+  content: '↓';
+}
+.itemListButton-ac{
+  position:absolute;
+  top: 135px;
+  left: 210px;
+  background-color: #444;
+  z-index: 10;
+  padding: 5px 0 8px 0;
+}
+.itemListButton-ac::before{
+  font-size: 15px;
+  color: #ffffff;
+  content: '↑';
+}
+
 /*  앱 css */
 #header {
-  max-width: 1920px;
-  height: 85px;
+
+  font-family: 'Noto-Sans-CJK-KR';
+  max-width: 100%;
+  min-width: 1300px;
+ max-height: 100px;
   background-color: #222;
 }
 .header-top {
@@ -14,7 +101,7 @@
   font-size: 30px;
   margin-top: 8px;
   display: inline-block;
-  font-weight: 800;
+  font-weight:800;
   color: rgb(185, 13, 13);
 }
 
@@ -30,7 +117,7 @@
   margin-right: 10px;
 }
 .gnbTop .list1 .user span {
-  font-size: 12px;
+  font-size:  12px;
   color: #fff;
 }
 .gnbTop .list1 .user {
@@ -51,41 +138,42 @@
 
 #header .nav {
   background-color: #444;
-  height: 48px;
+  height: 40px;
 }
 #header .nav ul {
   width: 100%;
   display: flex;
   justify-content: flex-start;
   line-height: 2.5;
-  height: auto;
+  background-color: #444;
 }
 #header .nav ul .navlist {
+  background-color: #444;
+  min-width: 97px;
   vertical-align: middle;
-  width: 100px;
+  border-right:0.5px solid #222;
+  border-top: 1px solid #444;
+  width: 97px;
   text-align: center;
-  height: 48px;
-  position: relative;
-}
-#header .nav ul .navlist::after {
-  content: "";
-  height: 46px;
-  border: 1px solid rgb(59, 59, 59);
-  position: absolute;
-  right: 0;
+  
+  
 }
 #header .nav ul .navlist:hover {
-  background-color: #555;
-}
-.navListActive {
-  background-color: rgb(185, 13, 13);
+  background-color: rgb(88, 88, 88);
+  min-width: 97px;
   vertical-align: middle;
-  width: 100px;
+  border-right: 0.5px solid #222 ;
+  border-top: 1px solid #444;
+  width: 97px;
   text-align: center;
 }
-.navListActive a {
-  font-weight: bold;
-  font-size: 14px;
+.navListActive {
+  background-color: crimson;
+  vertical-align: middle;
+  margin:0 0.5px 0 0.5px;
+  width: 97px;
+  min-width: 97px;
+  text-align: center;
 }
 
 /* #header .nav ul li:before {
@@ -95,29 +183,50 @@
   margin-right: 10px;
 } */
 
-#header .nav ul > li > a {
+#header .nav ul>li>a {
   color: rgb(247, 243, 243);
   padding-left: 0;
   padding-right: 0;
   font-size: 14px;
 }
-/*                                     content */
-.content-wrap {
-  height: auto;
+.topLinkText{
+  font-size: 15px;
+  color: #ffffff;
 }
-/*                                   side nav */
+
+
+/* side nav */
+
 .gnb-sideMenu {
-  max-width: 220px;
-  border-right: 1px solid rgb(173, 170, 170);
-  margin-top: 13px;
+  top: 90px;
+  position: absolute;
   height: 100%;
+  max-width: 210px;
+  min-width: 210px;
+  border-right: 1px solid rgb(173, 170, 170);
+}
+.gnb-sideMenu-ac {
+  display: none;
+  visibility: hidden;
+
 }
 .sideMenuName {
-  height: 150px;
+  height: 90px;
   text-align: center;
   line-height: 2.5;
   font-size: 20px;
   font-weight: 800;
+}
+.sideMenuName h2{
+  font-family: "Noto-Sans-CJK-KR";
+  font-size: 18px;
+  padding: 40px 0 15px 0 ;
+}
+.sideMenuText{
+  font-size: 13px;
+}
+.sideMenuText:hover{
+  text-decoration: underline;
 }
 .listname {
   background-color: rgb(134, 134, 134);
@@ -127,32 +236,38 @@
   color: #fff;
   font-weight: bold;
   cursor: pointer;
+  margin-top: 1px;
 }
-.show-menu {
-  height: auto;
-  padding-bottom: 20px;
+.listname-active{
+  background-color: #444;
+  height: 36px;
+  line-height: 36px;
+  padding-left: 15px;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 1px;
 }
-.show-menu li {
-  padding: 7px 4px 8px 25px;
-  background-color: #fff;
-  font-size: 14px;
-}
-.hide-menu {
-  height: auto;
-}
-.hide-menu li {
-  display: none;
-  font-size: 14px;
+.list-group-active {
+  display: block;
 }
 
-/* .show-menu li.active:before {
-  content: "";
-  display: inline-block;
-  width: 6px;
-  height: 6px;
-  margin: -5px 12px auto auto;
-  vertical-align: middle;
-  border-right: 1px solid rgb(197, 197, 197);
-  border-top: 1px solid rgb(197, 197, 197);
-  transform: rotate(45deg);
-} */
+.listGroup-hidden{
+  display: none;
+  visibility: hidden;
+}
+.listGroup li {
+  padding: 8px 4px 8px 25px;
+  background-color: #fff;
+}
+.listGroup li.acitve::before {
+  content:'';
+  display:inline-block;
+  width:6px;
+  height:6px;
+  margin:-5px 12px auto auto;
+  vertical-align:middle;
+  border-right:1px solid rgb(197, 197, 197);
+  border-top:1px solid rgb(197, 197, 197);
+  transform:rotate(45deg)
+}

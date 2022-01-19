@@ -1,16 +1,22 @@
 import "./App.css";
 import "./reset.css";
-import { useState } from "react";
-import Sidemenu from "./component/Sidemenu";
-import Header from "./component/Header";
+import HEADER from "./compornent/header/header";
+import Router from "./routes";
+import Side from "./compornent/Side";
+import React from "react";
+import Context from "./Context";
 
-function App() {
+
+export default function App() {
   return (
     <>
-      <Header />
-      <Sidemenu />
+    <Context>
+      <HEADER />
+      <Side />
+      <Router />
+    </Context>
     </>
+    
   );
 }
 
-export default App;
