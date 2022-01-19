@@ -1,14 +1,20 @@
-import "./App.css";
-import "./reset.css";
-import { useState } from "react";
-import Sidemenu from "./component/Sidemenu";
-import Header from "./component/Header";
+import React from "react";
+import "./Style/App.css";
+import "./Style/reset.css";
+import "./Style/page.css";
+import Header from "./layouts/Header";
+import Router from "./routers/routes";
+import SideBar from "./layouts/sidebar/SideBar";
+import Context from "./Context/Context";
 
 function App() {
   return (
     <>
-      <Header />
-      <Sidemenu />
+      <Context>
+        <Header />
+        <SideBar />
+        <Router />
+      </Context>
     </>
   );
 }
