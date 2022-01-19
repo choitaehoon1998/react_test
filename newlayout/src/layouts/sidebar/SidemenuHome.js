@@ -2,26 +2,27 @@ import { BrowserRouter, Link, Route } from "react-router-dom";
 import { useState } from "react";
 
 function Sidemenu() {
-  // // 토글 메뉴
-
-  // const [isOpen, setMenu] = useState(false);
-
-  // const toggleMenu = () => {
-  //   setMenu((isOpen) => !isOpen); // 상태값 반전 boolean
-  // };
-  //usestate를 쓰고 상태값 반전으로 버튼을 만들었는데 전체로 적용되서 해결법을 잘 모르겠습니다...
-
   const [list1, setList1] = useState(0);
   const [list2, setList2] = useState(0);
   const [list3, setList3] = useState(0);
   const [list4, setList4] = useState(0);
+  const [closeList, setCloseList] = useState(0);
 
   return (
-    <div className="content-wrap">
-      <div className="gnb-sideMenu">
+    <>
+      <div
+        className={closeList == 1 ? "listbutActive" : "listbut"}
+        onClick={() => {
+          if (closeList == 0) {
+            setCloseList(1);
+          } else if (closeList == 1) {
+            setCloseList(0);
+          }
+        }}
+      ></div>
+      <div className={closeList == 1 ? "gnb-sideMenuActive" : "gnb-sideMenu"}>
         <div className="sideMenuName">
-          <img></img>
-          <p>상품</p>
+          <p>기본</p>
         </div>
         <div
           className="listname"
@@ -33,14 +34,14 @@ function Sidemenu() {
             }
           }}
         >
-          상품 관리
+          설정 관리
         </div>
-        <ul className={list1 === 1 ? "hide-menu" : "show-menu"}>
+        <ul className={list1 ? "hide-menu" : "show-menu"}>
           <li>
-            <Link to="/">상품관리1</Link>
+            <Link to="/">설정관리</Link>
           </li>
           <li>
-            <Link to="/">상품관리2</Link>
+            <Link to="/">설정관리2</Link>
           </li>
           <li>
             <Link to="/">상품관리3</Link>
@@ -164,7 +165,7 @@ function Sidemenu() {
           </li>
         </ul>
       </div>
-    </div>
+    </>
   );
 }
 
