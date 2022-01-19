@@ -1,0 +1,158 @@
+/*  앱 css */
+#header {
+  max-width: 1920px;
+  height: 85px;
+  background-color: #222;
+}
+.header-top {
+  position: relative;
+  padding-bottom: 12px;
+}
+
+.logo {
+  margin-left: 20px;
+  font-size: 30px;
+  margin-top: 8px;
+  display: inline-block;
+  font-weight: 800;
+  color: rgb(185, 13, 13);
+}
+
+.gnbTop {
+  position: absolute;
+  right: 20px;
+  top: 13px;
+}
+
+.gnbTop .list1 li {
+  float: left;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+.gnbTop .list1 .user span {
+  font-size: 12px;
+  color: #fff;
+}
+.gnbTop .list1 .user {
+  color: #fff;
+  font-size: 14px;
+}
+
+.gnbTop .list1 li .headerseach1 {
+  display: inline-block;
+  margin-right: 6px;
+}
+
+.gnbTop .list1 li .headerseach2 {
+  display: inline-block;
+}
+
+/*  헤더의 gnb에 있는 메뉴 */
+
+#header .nav {
+  background-color: #444;
+  height: 48px;
+}
+#header .nav ul {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  line-height: 2.5;
+  height: auto;
+}
+#header .nav ul .navlist {
+  vertical-align: middle;
+  width: 100px;
+  text-align: center;
+  height: 48px;
+  position: relative;
+}
+#header .nav ul .navlist::after {
+  content: "";
+  height: 46px;
+  border: 1px solid rgb(59, 59, 59);
+  position: absolute;
+  right: 0;
+}
+#header .nav ul .navlist:hover {
+  background-color: #555;
+}
+.navListActive {
+  background-color: rgb(185, 13, 13);
+  vertical-align: middle;
+  width: 100px;
+  text-align: center;
+}
+.navListActive a {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+/* #header .nav ul li:before {
+  content: "";
+  height: 60px;
+  border: solid 1px #fff;
+  margin-right: 10px;
+} */
+
+#header .nav ul > li > a {
+  color: rgb(247, 243, 243);
+  padding-left: 0;
+  padding-right: 0;
+  font-size: 14px;
+}
+/*                                     content */
+.content-wrap {
+  height: auto;
+}
+/*                                   side nav */
+.gnb-sideMenu {
+  max-width: 220px;
+  border-right: 1px solid rgb(173, 170, 170);
+  margin-top: 13px;
+  height: 100%;
+}
+.sideMenuName {
+  height: 150px;
+  text-align: center;
+  line-height: 2.5;
+  font-size: 20px;
+  font-weight: 800;
+}
+.listname {
+  background-color: rgb(134, 134, 134);
+  height: 36px;
+  line-height: 36px;
+  padding-left: 15px;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+.show-menu {
+  height: auto;
+  padding-bottom: 20px;
+}
+.show-menu li {
+  padding: 7px 4px 8px 25px;
+  background-color: #fff;
+  font-size: 14px;
+}
+.hide-menu {
+  height: auto;
+}
+.hide-menu li {
+  display: none;
+  font-size: 14px;
+}
+
+/* .show-menu li.active:before {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin: -5px 12px auto auto;
+  vertical-align: middle;
+  border-right: 1px solid rgb(197, 197, 197);
+  border-top: 1px solid rgb(197, 197, 197);
+  transform: rotate(45deg);
+} */
