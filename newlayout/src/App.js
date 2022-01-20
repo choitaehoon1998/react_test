@@ -1,5 +1,5 @@
 import "./App.css";
-import "./reset.css";
+import "./reset.css"; 
 import HEADER from "./compornent/header/header";
 import Router from "./routes";
 import Side from "./compornent/Side";
