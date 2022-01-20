@@ -1,25 +1,19 @@
 import "./App.css";
-import "./reset.css";
+import "./reset.css"; 
 import HEADER from "./compornent/header/header";
 import Router from "./routes";
+import Side from "./compornent/Side";
 import React from "react";
-import SideMenu from "./sidemenu";
-import Test from "./compornent/sidemenu/sm";
-
+import Context from "./Context";
 
 export default function App() {
-  
   return (
-    <> 
-
-      <HEADER/>
-
-      <Test/>
-      
-      <Router/>
+    <>
+      <Context>
+        <HEADER />
+        <Side />
+        <Router />
+      </Context>
     </>
-      
-    
   );
 }
-

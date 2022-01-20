@@ -1,9 +1,6 @@
-import ORDERSIDEMENU from "./sidemenu/orderSidemenu";
-
 export default function Order(){
     return(
         <>
-        <ORDERSIDEMENU />
         <div className="content-wrap">
             <div className="content">
                 <div className="content-main">

@@ -1,11 +1,6 @@
-import { createContext } from "react/cjs/react.development";
-import HOMESIDEMENU from "./sidemenu/homeSidemenu";
-
 export default function Home(){
     return (
-        
         <>
-        <HOMESIDEMENU/>
         <div className="content-wrap">
            <div className="content">
                 <div className="content-main">
@@ -15,7 +10,6 @@ export default function Home(){
                 </div>
             </div>
         </div>
-
         </>
     );
 }

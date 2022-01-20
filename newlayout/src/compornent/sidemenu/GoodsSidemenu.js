@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import SideMenuName from "../../components/sidemenu/SideMenuName";
 
 export default function GoodsSIDEMENU() {
 const[side, setSide]=useState(0);
@@ -9,13 +10,15 @@ const[item1, setItem1]=useState(0);
 const[item2, setItem2]=useState(0);
 const[item3, setItem3]=useState(0);
   return (
-      <><div className={side===1?"sideButton-ac" : "sideButton"} onClick={() => {
+      <>
+      <div className={side===1?"sideButton-ac" : "sideButton"} onClick={() => {
         if (side === 0) {
           setSide(1);
         } else if (side === 1) {
           setSide(0);
         }
-      }} ></div>
+      }} >
+      </div>
       <div className={side === 1 ? "itemList-hidden" : ""}>
       <div className={itemList === 1 ? "itemListButton-ac":"itemListButton"} onClick={() => {
         if(itemList === 0){
@@ -28,9 +31,7 @@ const[item3, setItem3]=useState(0);
 
       <div className={side === 1 ?"gnb-sideMenu-ac" : "gnb-sideMenu"}>
         
-      <div className="sideMenuName">
-        <h2>상품</h2>
-      </div>
+      <SideMenuName title="상품"></SideMenuName>
 
       <div className={item1 === 1 ? "listname-active" : "listname"} onClick={() => {
         if (item1 === 0) {
@@ -104,7 +105,6 @@ const[item3, setItem3]=useState(0);
         <li>
           <Link to="" className="sideMenuText">브랜드 관리</Link>
         </li>
-
       </ul>
     </div></>
     

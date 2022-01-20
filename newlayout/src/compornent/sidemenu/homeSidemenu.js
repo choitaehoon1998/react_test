@@ -1,13 +1,15 @@
 import React from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import SideMenuName from "../../components/sidemenu/SideMenuName";
 
-const HOMESIDEMENU = () => {
-  const[side, setSide]=useState(0);
-  const[itemList, setItemList]=useState(0);
-  const[item1, setItem1]=useState(0);
-  const[item2, setItem2]=useState(0);
-  const[item3, setItem3]=useState(0);
+export default function HOMESIDEMENU() {
+const[side, setSide]=useState(0);
+const[itemList, setItemList]=useState(0);
+const[item1, setItem1]=useState(0);
+const[item2, setItem2]=useState(0);
+const[item3, setItem3]=useState(0);
+
   return (
       <><div className={side===1?"sideButton-ac" : "sideButton"} onClick={() => {
         if (side === 0) {
@@ -28,9 +30,8 @@ const HOMESIDEMENU = () => {
       </div>
 
       <div className={side === 1 ?"gnb-sideMenu-ac" : "gnb-sideMenu"}>
-      <div className="sideMenuName">
-        <h2>기본설정</h2>
-      </div>
+
+      <SideMenuName title="기본설정"></SideMenuName>
 
       <div className={item1 === 1 ? "listname-active" : "listname"} onClick={() => {
         if (item1 === 0) {
@@ -110,10 +111,9 @@ const HOMESIDEMENU = () => {
         <li>
           <Link to="" className="sideMenuText">최근 본 상품 설정</Link>
         </li>
-
       </ul>
     </div></>
     
   );
 }
-export default HOMESIDEMENU;
+
