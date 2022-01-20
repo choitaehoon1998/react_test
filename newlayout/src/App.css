@@ -144,6 +144,7 @@
   justify-content: flex-start;
   line-height: 2.5;
   background-color: #444;
+  height: 100%;
 }
 #header .nav ul .navlist {
   background-color: #444;
@@ -186,7 +187,7 @@
   font-size: 14px;
 }
 .topLinkText {
-  font-size: 15px;
+  font-size: 14px;
   color: #ffffff;
 }
 
