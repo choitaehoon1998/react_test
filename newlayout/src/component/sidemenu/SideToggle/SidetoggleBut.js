@@ -1,24 +1,24 @@
-import React from "react";
-import { Component, useState } from "react";
-import "./SideToggle.css";
+// import React, { Component, useState } from "react";
+// import "./SideToggle.css";
 
-const SidetoggleBut = (props) => {
-  const [side, setSide] = useState(0);
+// // 스타일 변화 있는건 컴포넌트가 안된다 하셔서 ...? 가만히 두기
 
-  return (
-    <>
-      <div
-        className={side === 1 ? "sideButton-ac" : "sideButton"}
-        onClick={() => {
-          if (side === 0) {
-            setSide(1);
-          } else if (side === 1) {
-            setSide(0);
-          }
-        }}
-      ></div>
-    </>
-  );
-};
+// class SidetoggleBut extends Component {
+//   render() {
 
-export default SidetoggleBut;
+//     return (
+//       <div
+
+//         onClick={() => {
+//           if (side === 0) {
+//             setSide(1);
+//           } else if (side === 1) {
+//             setSide(0);
+//           }
+//         }}
+//       ></div>
+//     );
+//   }
+// }
+
+// export default SidetoggleBut;

@@ -1,10 +1,9 @@
 import React from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import SidetoggleBut from "./SideToggle/SidetoggleBut";
-import SideListLink from "./SideListLink";
+import SideFrameTit from "./Sideframe/SideFrameTit";
 
-export default function HOMESIDEMENU(props) {
+export default function HOMESIDEMENU() {
   const [side, setSide] = useState(0);
   const [itemList, setItemList] = useState(0);
   const [item1, setItem1] = useState(0);
@@ -23,7 +22,7 @@ export default function HOMESIDEMENU(props) {
           }
         }}
       ></div>
-      {/* <SidetoggleBut /> */}
+
       <div className={side === 1 ? "itemList-hidden" : ""}>
         <div
           className={itemList === 1 ? "itemListButton-ac" : "itemListButton"}
@@ -44,10 +43,7 @@ export default function HOMESIDEMENU(props) {
       </div>
 
       <div className={side === 1 ? "gnb-sideMenu-ac" : "gnb-sideMenu"}>
-        <div className="sideMenuName">
-          <h2>기본설정</h2>
-        </div>
-
+        <SideFrameTit name="기본설정" />
         <div
           className={item1 === 1 ? "listname-active" : "listname"}
           onClick={() => {
@@ -62,9 +58,9 @@ export default function HOMESIDEMENU(props) {
         </div>
         <ul className={item1 === 1 ? "listGroup" : "listGroup-hidden"}>
           <li>
-            {/* <Link to="" className="sideMenuText">
+            <Link to="" className="sideMenuText">
               기본 정보 설정
-            </Link> */}
+            </Link>
           </li>
           <li>
             <Link to="" className="sideMenuText">

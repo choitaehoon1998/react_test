@@ -25,6 +25,36 @@
   font-size: 20px;
 }
 
+.sideButton {
+  position: absolute;
+  top: 105px;
+  left: 210px;
+  background: #444;
+  z-index: 10;
+  padding: 5px 2px 8px 2px;
+}
+.sideButton::before {
+  font-size: 14px;
+  content: "<";
+  color: #fff;
+}
+.sideButton-ac {
+  position: absolute;
+  top: 105px;
+  left: 0px;
+  background-color: #444;
+  padding: 5px 2px 8px 2px;
+}
+.sideButton-ac::before {
+  font-size: 14px;
+  content: ">";
+  color: #fff;
+}
+
+.itemList-hidden {
+  display: none;
+}
+
 /* 사이드 목록 모두 열고 닽기 */
 .itemListButton {
   position: absolute;
