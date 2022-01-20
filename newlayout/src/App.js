@@ -1,22 +1,19 @@
+import "./App.css";
+import "./reset.css";
+import HEADER from "./component/header/header";
+import Router from "./routes";
+import Side from "./component/Side";
 import React from "react";
-import "./Style/App.css";
-import "./Style/reset.css";
-import "./Style/page.css";
-import Header from "./layouts/Header";
-import Router from "./routers/routes";
-import SideBar from "./layouts/sidebar/SideBar";
-import Context from "./Context/Context";
+import Context from "./Context";
 
-function App() {
+export default function App() {
   return (
     <>
       <Context>
-        <Header />
-        <SideBar />
+        <HEADER />
+        <Side />
         <Router />
       </Context>
     </>
   );
 }
-
-export default App;
