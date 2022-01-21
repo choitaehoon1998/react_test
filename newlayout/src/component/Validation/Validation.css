@@ -5,17 +5,25 @@
 }
 
 /*                                   공용 form 스타일  */
+.frame {
+  position: relative;
+  margin-bottom: 3em;
+  display: flex;
+  flex-wrap: wrap;
+}
 .form-frame {
   font-family: "Noto Sans KR", sans-serif;
   padding: 1.75rem;
   border: 1px solid rgb(173, 170, 170);
   border-radius: 5px;
-  position: absolute;
-  width: 90%;
   height: auto;
   box-shadow: 0 1px 15px rgb(0 0 0 / 4%), 0 1px 6px rgb(0 0 0 / 4%);
 }
-.form-frame1 > form > label {
+.card {
+  max-width: 100%;
+  flex: 0 0 100%;
+}
+.form-frame1 > .card > form > label {
   font-weight: bold;
 }
 
@@ -26,10 +34,11 @@
   width: 100%;
 }
 
-.form-groups label {
+.lable-font {
   display: inline-block;
   margin-bottom: 10px;
   font-weight: normal;
+  font-size: 14px;
 }
 
 .form-control {
@@ -92,4 +101,29 @@
   bottom: auto;
   top: 12px;
   width: 5px;
+}
+
+/*               Custom Checkbox style*/
+.ck-position:first-of-type {
+  margin-left: 0;
+}
+.ck-position {
+  width: 20px;
+  height: 20;
+  text-align: left;
+  display: inline-block;
+  margin-right: 5px;
+  margin-left: 12px;
+}
+
+.label-font-second {
+  font-size: 12px;
+  font-weight: normal;
+}
+
+/*               CheckBox Group Style*/
+
+.ckbox-group {
+  display: inline-block;
+  margin-right: 20px;
 }
