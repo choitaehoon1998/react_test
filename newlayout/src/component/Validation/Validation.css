@@ -1,0 +1,95 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+.notosanskr * {
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+/*                                   공용 form 스타일  */
+.form-frame {
+  font-family: "Noto Sans KR", sans-serif;
+  padding: 1.75rem;
+  border: 1px solid rgb(173, 170, 170);
+  border-radius: 5px;
+  position: absolute;
+  width: 90%;
+  height: auto;
+  box-shadow: 0 1px 15px rgb(0 0 0 / 4%), 0 1px 6px rgb(0 0 0 / 4%);
+}
+.form-frame1 > form > label {
+  font-weight: bold;
+}
+
+.form-groups {
+  position: relative;
+  margin-bottom: 30px;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.form-groups label {
+  display: inline-block;
+  margin-bottom: 10px;
+  font-weight: normal;
+}
+
+.form-control {
+  border-radius: 0.1rem;
+  outline: initial !important;
+  box-shadow: none !important;
+  font-size: 0.8rem;
+  border: 1px solid #d7d7d7;
+  background: #fff;
+  color: #3a3a3a;
+  height: auto;
+  padding: 0.5rem 0.75rem;
+  line-height: 1;
+  display: block;
+  width: 90%;
+}
+
+/*                       submit btn  */
+.btn-color:hover {
+  background-color: rgb(139, 9, 9);
+}
+.btn-color {
+  background-color: rgb(185, 13, 13);
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+.btn {
+  border-radius: 50px;
+  outline: initial !important;
+  box-shadow: none !important;
+  font-size: 0.8rem;
+  padding: 0.5rem 1.75rem;
+}
+
+.feedBack {
+  position: absolute;
+  top: -5px;
+  left: 55px;
+  border: 1px solid rgb(139, 9, 9);
+  width: 12.5em;
+  font-size: 12px;
+  height: 1.8rem;
+  line-height: 1.8rem;
+  text-align: center;
+  border-radius: 5px;
+  display: none;
+}
+.feedBack::before {
+  content: "";
+  position: absolute;
+  left: -10px;
+  right: auto;
+  margin-left: 0;
+  border: initial rgb(139, 9, 9);
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-right: 5px solid rgb(139, 9, 9);
+  bottom: auto;
+  top: 12px;
+  width: 5px;
+}

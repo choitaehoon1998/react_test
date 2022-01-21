@@ -63,8 +63,8 @@ export default function HOMESIDEMENU() {
             </Link>
           </li>
           <li>
-            <Link to="" className="sideMenuText">
-              약관/개인정보처리방침
+            <Link to="./Validation" className="sideMenuText">
+              Validations
             </Link>
           </li>
           <li>
