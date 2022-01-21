@@ -1,31 +1,64 @@
+.mg-b5{
+  margin-bottom: 5px;
+}
 /* content */
-.content-wrap{
+.content-wrap {
   height: auto;
 }
-.content{
+.content {
   margin-top: 40px;
   margin-left: 210px;
   height: auto;
 }
-.content-view{
+.content-view {
   margin-top: 40px;
   margin-left: 30px;
   height: auto;
 }
-.content-main{
-  padding: 0 20px 0 40px;
+.content-main {
+  padding: 0 40px 0 40px;
 }
-.content-title{
+.content-title {
   margin: 40px 0 40px 0;
   padding-bottom: 10px;
-  border-bottom:2px solid #444;
+  border-bottom: 2px solid #444;
 }
-.content-title h3{
+.content-title h3 {
   margin: 20px 0 10px 0;
   font-size: 20px;
 }
+.content-box{
+  border-radius: 10px;
+  background-color: rgb(223, 223, 223);
+  width: 100%;
+}
+.box-body{
+  padding: 10px 10px 10px 10px;
+}
+.box-body li{
+  list-style-type: none;
+}
+.box-title{
+  font-size: 18px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid rgb(124, 124, 124);
+  margin-bottom: 8px;
+}
+.box-subtitle{
+  font-size: 13px;
+  color: rgb(107, 107, 107);
+  padding-left: 13px;
+  margin-bottom: 3px;
+}
+.div-box{
+  text-align: center;
+  max-width: max-content;
+  border: 1px solid #444;
+  padding: 3px 3px 3px 3px;
+}
+
 /* 사이드 메뉴 열고 닫기 */
-.sideButton{
+.sideButton {
   position: absolute;
   top: 105px;
   left: 210px;
@@ -33,62 +66,60 @@
   z-index: 10;
   padding: 5px 2px 8px 2px;
 }
-.sideButton::before{
+.sideButton::before {
   font-size: 14px;
-  content: '<';
+  content: "<";
   color: #fff;
 }
-.sideButton-ac{
+.sideButton-ac {
   position: absolute;
   top: 105px;
   left: 0px;
   background-color: #444;
   padding: 5px 2px 8px 2px;
 }
-.sideButton-ac::before{
+.sideButton-ac::before {
   font-size: 14px;
-  content: '>';
+  content: ">";
   color: #fff;
-  
 }
-.itemList-hidden{
+.itemList-hidden {
   display: none;
 }
 /* 사이드 목록 모두 열고 닽기 */
-.itemListButton{
-  position:absolute;
+.itemListButton {
+  position: absolute;
   top: 135px;
   left: 210px;
   background-color: #444;
   z-index: 10;
   padding: 5px 0 8px 0;
 }
-.itemListButton::before{
+.itemListButton::before {
   font-size: 15px;
   color: #ffffff;
-  content: '↓';
+  content: "↓";
 }
-.itemListButton-ac{
-  position:absolute;
+.itemListButton-ac {
+  position: absolute;
   top: 135px;
   left: 210px;
   background-color: #444;
   z-index: 10;
   padding: 5px 0 8px 0;
 }
-.itemListButton-ac::before{
+.itemListButton-ac::before {
   font-size: 15px;
   color: #ffffff;
-  content: '↑';
+  content: "↑";
 }
 
 /*  앱 css */
 #header {
-
-  font-family: 'Noto-Sans-CJK-KR';
+  font-family: "Noto-Sans-CJK-KR";
   max-width: 100%;
   min-width: 1300px;
- max-height: 100px;
+  max-height: 100px;
   background-color: #222;
 }
 .header-top {
@@ -101,7 +132,7 @@
   font-size: 30px;
   margin-top: 8px;
   display: inline-block;
-  font-weight:800;
+  font-weight: 800;
   color: rgb(185, 13, 13);
 }
 
@@ -117,7 +148,7 @@
   margin-right: 10px;
 }
 .gnbTop .list1 .user span {
-  font-size:  12px;
+  font-size: 12px;
   color: #fff;
 }
 .gnbTop .list1 .user {
@@ -151,26 +182,42 @@
   background-color: #444;
   min-width: 97px;
   vertical-align: middle;
-  border-right:0.5px solid #222;
+  border-right: 0.5px solid #222;
   border-top: 1px solid #444;
   width: 97px;
   text-align: center;
-  
-  
+}
+.navlist {
+  background-color: #444;
+  min-width: 97px;
+  vertical-align: middle;
+  border-right: 0.5px solid #222;
+  border-top: 1px solid #444;
+  width: 97px;
+  text-align: center;
+}
+.navlist:hover {
+  background-color: rgb(88, 88, 88);
+  min-width: 97px;
+  vertical-align: middle;
+  border-right: 0.5px solid #222;
+  border-top: 1px solid #444;
+  width: 97px;
+  text-align: center;
 }
 #header .nav ul .navlist:hover {
   background-color: rgb(88, 88, 88);
   min-width: 97px;
   vertical-align: middle;
-  border-right: 0.5px solid #222 ;
+  border-right: 0.5px solid #222;
   border-top: 1px solid #444;
   width: 97px;
   text-align: center;
 }
 .navListActive {
-  background-color: crimson;
+  background-color: rgb(185, 13, 13);
   vertical-align: middle;
-  margin:0 0.5px 0 0.5px;
+  margin: 0 0.5px 0 0.5px;
   width: 97px;
   min-width: 97px;
   text-align: center;
@@ -183,17 +230,16 @@
   margin-right: 10px;
 } */
 
-#header .nav ul>li>a {
+#header .nav ul > li > a {
   color: rgb(247, 243, 243);
   padding-left: 0;
   padding-right: 0;
   font-size: 14px;
 }
-.topLinkText{
+.topLinkText {
   font-size: 15px;
   color: #ffffff;
 }
-
 
 /* side nav */
 
@@ -208,26 +254,8 @@
 .gnb-sideMenu-ac {
   display: none;
   visibility: hidden;
+}
 
-}
-.sideMenuName {
-  height: 90px;
-  text-align: center;
-  line-height: 1;
-  font-size: 20px;
-  font-weight: 800;
-}
-.sideMenuName h2{
-  font-family: "Noto-Sans-CJK-KR";
-  font-size: 18px;
-  padding: 40px 0 15px 0 ;
-}
-.sideMenuText{
-  font-size: 13px;
-}
-.sideMenuText:hover{
-  text-decoration: underline;
-}
 .listname {
   background-color: rgb(134, 134, 134);
   height: 36px;
@@ -237,8 +265,9 @@
   font-weight: bold;
   cursor: pointer;
   margin-top: 1px;
+  max-width: 210px;
 }
-.listname-active{
+.listname-active {
   background-color: #444;
   height: 36px;
   line-height: 36px;
@@ -247,12 +276,13 @@
   font-weight: bold;
   cursor: pointer;
   margin-top: 1px;
+  max-width: 210px;
 }
 .list-group-active {
   display: block;
 }
 
-.listGroup-hidden{
+.listGroup-hidden {
   display: none;
   visibility: hidden;
 }
@@ -261,13 +291,13 @@
   background-color: #fff;
 }
 .listGroup li.acitve::before {
-  content:'';
-  display:inline-block;
-  width:6px;
-  height:6px;
-  margin:-5px 12px auto auto;
-  vertical-align:middle;
-  border-right:1px solid rgb(197, 197, 197);
-  border-top:1px solid rgb(197, 197, 197);
-  transform:rotate(45deg)
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin: -5px 12px auto auto;
+  vertical-align: middle;
+  border-right: 1px solid rgb(197, 197, 197);
+  border-top: 1px solid rgb(197, 197, 197);
+  transform: rotate(45deg);
 }

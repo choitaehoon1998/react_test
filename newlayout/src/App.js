@@ -1,22 +1,19 @@
 import "./App.css";
-import "./reset.css";
-import React from "react";
-import HEADER from "./compornent/header/header";
+import "./reset.css"; 
+import HEADER from "./component/header/header";
 import Router from "./routes";
-import Side from "./compornent/Side";
+import Side from "./component/Side";
+import React from "react";
 import Context from "./Context";
-
 
 export default function App() {
   return (
     <>
-    <Context>
-      <HEADER />
-      <Side />
-      <Router />
-    </Context>
+      <Context>
+        <HEADER />
+        <Side />
+        <Router />
+      </Context>
     </>
-    
   );
 }
-
