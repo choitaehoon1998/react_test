@@ -2,7 +2,7 @@ import React from "react";
 import { useState} from "react";
 import { Link } from "react-router-dom";
 import { useResultContext } from "../../Context";
-import Search1 from "../../components/SelectOption";
+
 
 export default function HEADER() {
   const [menuNav, setMenuNav] = useState(0); // 헤더 style 변경 state
@@ -37,17 +37,23 @@ export default function HEADER() {
               >
                 <option value={"menu"}>메뉴</option>
                 <option value={"member"}>회원</option>
-                
               </select>
             </div>
-            <Search1 title="메뉴검색"></Search1>
+            <div className="headerseach2">
+              <div id="header-SeachText">
+                <input
+                  type="text"
+                  className="from1"
+                  placeholder="메뉴검색"
+                ></input>
+              </div>
+            </div>
           </li>
         </ul>
       </div>
     </div>
     <div className="nav">
         <ul>
-
           <Link to="/home" className={menuNav === 1 ? "navListActive" : "navlist"} onClick={() => {
             setMenu(1);
             }}>
