@@ -127,3 +127,15 @@
   display: inline-block;
   margin-right: 20px;
 }
+
+/*  스위치  */
+.rc-switch {
+}
+
+.rc-switch-inner {
+  color: #fff;
+  font-size: 12px;
+  position: absolute;
+  left: 24px;
+  top: 0;
+}

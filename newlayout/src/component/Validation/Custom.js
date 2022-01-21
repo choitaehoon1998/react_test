@@ -218,12 +218,28 @@ export default function Custom() {
           {/* Tags */}
           <div className="form-groups">
             <label className="lable-font">Tags</label>
-            <input
-              name="Tags"
-              className="form-control"
-              value={"test@test.com"}
-            ></input>
-            <div className="feedBack">Please enter your name</div>
+            <div className="react-tagsinput">
+              <span>
+                <input
+                  type={"text"}
+                  placeholder="Add a tag"
+                  className="form-control"
+                ></input>
+              </span>
+            </div>
+          </div>
+          {/* 스위치 */}
+          <div className="form-groups">
+            <label className="lable-font">switch</label>
+            <button
+              name="switch"
+              type="button"
+              role={"switch"}
+              aria-checked="false"
+              className="rc-switch custom-switch custom-switch-primary"
+            >
+              <span className="rc-switch-inner"></span>
+            </button>
           </div>
 
           <button type="submit" className="btn btn-color">
