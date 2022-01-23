@@ -2,4 +2,14 @@
   position: relative;
   padding: 0 1em;
   max-width: 600px;
+  margin-right: 10px;
+  display: flexbox;
+  justify-content: left;
+}
+.right-frame {
+  position: relative;
+  padding: 0 1em;
+  max-width: 600px;
+  display: flexbox;
+  justify-content: right;
 }

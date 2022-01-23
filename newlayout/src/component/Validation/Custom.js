@@ -1,4 +1,6 @@
 import "./Validation.css";
+import React, { useState } from "react";
+import CustomDatepicker from "./component/CustomDatepicker";
 
 export default function Custom() {
   return (
@@ -122,6 +124,7 @@ export default function Custom() {
               </div>
             </fieldset>
           </div>
+
           {/* 체크박스 타입 radio */}
           <div className="form-groups">
             <label className="lable-font">Radio Groups</label>
@@ -168,6 +171,7 @@ export default function Custom() {
               </div>
             </fieldset>
           </div>
+
           {/* 커스텀 체크박스 라디오 타입 */}
           <div className="form-groups">
             <label className="lable-font">Custom Radio Groups</label>
@@ -228,18 +232,22 @@ export default function Custom() {
               </span>
             </div>
           </div>
+
           {/* 스위치 */}
           <div className="form-groups">
-            <label className="lable-font">switch</label>
-            <button
-              name="switch"
-              type="button"
-              role={"switch"}
-              aria-checked="false"
-              className="rc-switch custom-switch custom-switch-primary"
-            >
-              <span className="rc-switch-inner"></span>
-            </button>
+            <label className="label-font">switch</label>
+            <input type="checkbox" id="switch"></input>
+            <label for="switch" class="switch_label">
+              <span class="onf_btn"></span>
+            </label>
+          </div>
+
+          {/*  datepicker */}
+          <div className="form-groups">
+            <label className="label-font">Date picker</label>
+            <div className="react-datePicker-wrapper">
+              <CustomDatepicker />
+            </div>
           </div>
 
           <button type="submit" className="btn btn-color">

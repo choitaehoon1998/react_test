@@ -129,13 +129,139 @@
 }
 
 /*  스위치  */
-.rc-switch {
+#switch {
+  position: absolute;
+  /* hidden */
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
 }
 
-.rc-switch-inner {
-  color: #fff;
-  font-size: 12px;
+.switch_label {
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  width: 58px;
+  height: 28px;
+  background: #fff;
+  border: 2px solid rgb(185, 13, 13);
+  border-radius: 20px;
+  transition: 0.2s;
+}
+.switch_label:hover {
+  background: #efefef;
+}
+.onf_btn {
   position: absolute;
-  left: 24px;
-  top: 0;
+  top: 4px;
+  left: 3px;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  background: rgb(185, 13, 13);
+  transition: 0.2s;
+}
+
+/* checking style */
+#switch:checked + .switch_label {
+  background: rgb(139, 9, 9);
+  border: 2px solid rgb(139, 9, 9);
+}
+
+#switch:checked + .switch_label:hover {
+  background: rgb(192, 14, 14);
+}
+
+/* move */
+#switch:checked + .switch_label .onf_btn {
+  left: 34px;
+  background: #fff;
+  box-shadow: 1px 2px 3px #00000020;
+}
+/* 데이커 */
+.react-datePicker-wrapper {
+  width: 100%;
+}
+/*  TopLabels */
+/* 라벨이 인풋에 걸쳐 있는 형식  */
+.has-float-label {
+  display: block;
+  position: relative;
+}
+
+.has-float-label > span:last-of-type,
+.has-float-label label {
+  position: absolute;
+  cursor: text;
+  font-size: 80%;
+  opacity: 1;
+  top: -0.4em;
+  left: 0.75rem;
+  z-index: 1;
+  line-height: 1;
+  padding: 0 1px;
+}
+
+.has-float-label > span:after,
+.has-float-label label:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  height: 5px;
+  top: 3px;
+  left: -0.2em;
+  right: -0.2em;
+  z-index: -1;
+}
+
+.has-float-label > span:after,
+.has-float-label label:after {
+  background: #fff !important;
+}
+
+.has-float-label > span,
+.has-float-label label,
+.has-top-label > span,
+.has-top-label label {
+  color: rgba(58, 58, 58, 0.7);
+}
+
+/* ToplabelINPUT */
+
+.has-top-label {
+  display: block;
+  position: relative;
+}
+
+.has-top-label label:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  height: 2px;
+  top: 50%;
+  left: -0.2em;
+  right: -0.2em;
+  z-index: -1;
+}
+
+.has-top-label label {
+  position: absolute;
+  cursor: text;
+  font-size: 70%;
+  opacity: 1;
+  top: 0.7rem;
+  left: 0.75rem;
+  z-index: 1;
+  line-height: 1;
+  padding: 0 1px;
+  font-weight: 600;
+}
+
+.has-top-label .form-control {
+  min-height: calc(2.2rem + 2px) !important;
+}
+
+.has-top-label .form-control {
+  padding: 1.7rem 0.75rem 0.5rem !important;
 }
