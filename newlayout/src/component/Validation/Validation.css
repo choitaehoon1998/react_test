@@ -32,6 +32,7 @@
   margin-bottom: 30px;
   margin-top: 20px;
   width: 100%;
+  height: auto;
 }
 
 .lable-font {
@@ -42,18 +43,11 @@
 }
 
 .form-control {
-  border-radius: 0.1rem;
-  outline: initial !important;
-  box-shadow: none !important;
-  font-size: 0.8rem;
-  border: 1px solid #d7d7d7;
-  background: #fff;
-  color: #3a3a3a;
-  height: auto;
-  padding: 0.5rem 0.75rem;
-  line-height: 1;
-  display: block;
   width: 100%;
+  border-radius: 2px;
+  border: 1px solid rgb(173, 170, 170);
+  height: 30px;
+  line-height: 30px;
 }
 
 /*                       submit btn  */
@@ -76,40 +70,35 @@
 }
 
 .feedBack {
+  display: none;
+}
+.feedBackActive {
+  display: block;
   position: absolute;
-  top: -5px;
-  left: 55px;
-  border: 1px solid rgb(139, 9, 9);
+  top: -8px;
+  left: 95px;
+  border: 2px solid rgb(139, 9, 9);
   width: 12.5em;
   font-size: 12px;
-  height: 1.8rem;
-  line-height: 1.8rem;
+  height: 2.5rem;
+  line-height: 2.5rem;
   text-align: center;
   border-radius: 5px;
-  display: blcok;
-}
-.feedBack::before {
-  content: "";
-  position: absolute;
-  left: -10px;
-  right: auto;
-  margin-left: 0;
-  border: initial rgb(139, 9, 9);
-  border-top: 5px solid transparent;
-  border-bottom: 5px solid transparent;
-  border-right: 5px solid rgb(139, 9, 9);
-  bottom: auto;
-  top: 12px;
-  width: 5px;
+  background-color: #fff;
+  z-index: 10;
 }
 
-/*               Custom Checkbox style*/
+/*                Checkbox */
+.line {
+  position: relative;
+  height: 30px;
+}
+
 .ck-position:first-of-type {
   margin-left: 0;
 }
 .ck-position {
   width: 20px;
-  height: 20;
   text-align: left;
   display: inline-block;
   margin-right: 5px;
@@ -119,23 +108,178 @@
 .label-font-second {
   font-size: 12px;
   font-weight: normal;
+  position: absolute;
+  top: 11px;
+  left: 30px;
 }
-input[type="checkbox"],
-input[type="radio"] {
-  box-sizing: border-box;
-  padding: 0;
+
+/*  체크박스 커스텀 */
+input[id="Custom-checkbox"] + label {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #bcbcbc;
+  cursor: pointer;
+  border-radius: 3px;
+  top: 10px;
 }
-.form-check-inline .form-check-input {
-  position: static;
-  margin-top: 0;
-  margin-right: 0.3125rem;
-  margin-left: 0;
+input[id="Custom-checkbox"]:checked + label {
+  background-color: rgb(139, 9, 9);
+}
+input[id="Custom-checkbox"] {
+  display: none;
+}
+.custom-control-input {
+  position: absolute;
+  top: 10px;
+}
+
+/* 커스텀 그룹 */
+input[id="Custom-checkbox1"]:checked + label {
+  background-color: rgb(139, 9, 9);
+}
+
+input[id="Custom-checkbox1"] + label {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #bcbcbc;
+  cursor: pointer;
+  border-radius: 3px;
+  top: 10px;
+}
+input[id="Custom-checkbox1"] {
+  display: none;
+}
+/* 2 */
+input[id="Custom-checkbox2"]:checked + label {
+  background-color: rgb(139, 9, 9);
+}
+
+input[id="Custom-checkbox2"] + label {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #bcbcbc;
+  cursor: pointer;
+  border-radius: 3px;
+  top: 10px;
+}
+input[id="Custom-checkbox2"] {
+  display: none;
+}
+/* 3 */
+input[id="Custom-checkbox3"]:checked + label {
+  background-color: rgb(139, 9, 9);
+}
+
+input[id="Custom-checkbox3"] + label {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #bcbcbc;
+  cursor: pointer;
+  border-radius: 3px;
+  top: 10px;
+}
+input[id="Custom-checkbox3"] {
+  display: none;
+}
+/* 4   */
+input[id="Custom-checkbox4"]:checked + label {
+  background-color: rgb(139, 9, 9);
+}
+
+input[id="Custom-checkbox4"] + label {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #bcbcbc;
+  cursor: pointer;
+  border-radius: 3px;
+  top: 10px;
+}
+input[id="Custom-checkbox4"] {
+  display: none;
+}
+
+.flex-box {
+  display: flex;
+}
+.line2 {
+  flex: 1;
+}
+
+/* 라디오 커스텀 그룹 */
+input[id="Custom-radio1"] + label {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #bcbcbc;
+  cursor: pointer;
+  border-radius: 45px;
+  top: 10px;
+}
+input[id="Custom-radio1"]:checked + label {
+  background-color: rgb(139, 9, 9);
+}
+input[id="Custom-radio1"] {
+  display: none;
+}
+
+input[id="Custom-radio2"] + label {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #bcbcbc;
+  cursor: pointer;
+  border-radius: 45px;
+  top: 10px;
+}
+input[id="Custom-radio2"]:checked + label {
+  background-color: rgb(139, 9, 9);
+}
+input[id="Custom-radio2"] {
+  display: none;
+}
+
+input[id="Custom-radio3"] + label {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #bcbcbc;
+  cursor: pointer;
+  border-radius: 45px;
+  top: 10px;
+}
+input[id="Custom-radio3"]:checked + label {
+  background-color: rgb(139, 9, 9);
+}
+input[id="Custom-radio3"] {
+  display: none;
+}
+input[id="Custom-radio4"] + label {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #bcbcbc;
+  cursor: pointer;
+  border-radius: 45px;
+  top: 10px;
+}
+input[id="Custom-radio4"]:checked + label {
+  background-color: rgb(139, 9, 9);
+}
+input[id="Custom-radio4"] {
+  display: none;
 }
 /*               CheckBox Group Style*/
 
 .ckbox-group {
+  position: relative;
   display: inline-block;
   margin-right: 20px;
+  width: 60px;
 }
 
 /*  스위치  */
@@ -192,6 +336,12 @@ input[type="radio"] {
 /* 데이커 */
 .react-datePicker-wrapper {
   width: 100%;
+  margin-top: 20px;
+}
+.datepick {
+  width: 100% !important;
+  z-index: 10 !important;
+  height: 30px !important;
 }
 
 /*  TopLabels */
@@ -239,6 +389,7 @@ input[type="radio"] {
 }
 
 /* ToplabelINPUT */
+/* 제목이 인풋에 들아가 있는 방식 */
 
 .has-top-label {
   display: block;
@@ -274,5 +425,10 @@ input[type="radio"] {
 }
 
 .has-top-label .form-control {
-  padding: 1.7rem 0.75rem 0.5rem !important;
+  padding: 1.7rem 0rem 0.2rem 0.4rem !important;
+}
+
+select.form-control {
+  height: 60px;
+  width: 100%;
 }

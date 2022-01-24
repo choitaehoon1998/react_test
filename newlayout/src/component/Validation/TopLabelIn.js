@@ -51,7 +51,6 @@ export default function TopLabelsIn() {
               </div>
             </div>
 
-            {/* 리액트 셀렉션으로 교체 */}
             <div className="form-groups has-top-label">
               <label className="lable-font">select</label>
               <select name="select" className="form-control">

@@ -40,31 +40,32 @@ export default function DefaultValues() {
 
             <div className="form-groups">
               <label className="lable-font">Location Qualities</label>
-              <div>
-                <input
-                  type={"checkbox"}
-                  name="Custom checkbox"
-                  className="form-control ck-position"
-                ></input>
-                <label className="label-font-second">Beautiful</label>
-              </div>
-              <div>
-                <input
-                  type={"checkbox"}
-                  name="Custom checkbox"
-                  className="form-control ck-position"
-                ></input>
-                <label className="label-font-second">Awesome</label>
-              </div>
-              <div>
-                <input
-                  type={"checkbox"}
-                  name="Custom checkbox"
-                  className="form-control ck-position"
-                ></input>
-                <label className="label-font-second">Wonderful</label>
-              </div>
-              <div className="feedBack">Must agree to something</div>
+              <fieldset>
+                <div className="ckbox-group">
+                  <input
+                    type={"checkbox"}
+                    name="Checkbox Group"
+                    className="form-control ck-position"
+                  ></input>
+                  <label className="label-font-second">flower</label>
+                </div>
+                <div className="ckbox-group">
+                  <input
+                    type={"checkbox"}
+                    name="Checkbox Group"
+                    className="form-control ck-position"
+                  ></input>
+                  <label className="label-font-second">ball</label>
+                </div>
+                <div className="ckbox-group">
+                  <input
+                    type={"checkbox"}
+                    name="Checkbox Group"
+                    className="form-control ck-position"
+                  ></input>
+                  <label className="label-font-second">ball</label>
+                </div>
+              </fieldset>
             </div>
 
             <div className="form-groups">

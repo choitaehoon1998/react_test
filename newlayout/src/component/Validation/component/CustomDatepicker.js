@@ -11,9 +11,10 @@ const CustomDatepicker = () => {
   return (
     <DatePicker
       selected={startDate}
-      onChange={date => setStartDate(date)}
+      onChange={(date) => setStartDate(date)}
       minDate={new Date()}
       showDisabledMonthNavigation
+      className="datepick"
     />
   );
 };
