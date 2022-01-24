@@ -1,13 +1,8 @@
 import React from "react";
 import "./compage.css";
 import ContentTitle from "../component/content/ContentTitel";
-import NormalButton from "../component/buttons/normalbuttons";
-import BigButton from "../component/buttons/bigbutton";
-import SmallButton from "../component/buttons/smallbutton";
-import LinkButton from "../component/buttons/linkbutton";
-import MissButton from "../component/buttons/missbutton";
-import GroupButton3 from "../component/buttons/groupbutton3";
-import GroupButton4 from "../component/buttons/groupbutton4";
+import {NormalButton, BigButton, SmallButton, LinkButton, MissButton} from "../component/buttons/buttons";
+import {GroupButton3, GroupButton4} from "../component/buttons/groupbutton";
 
 export default function Buttons() {
     return( 
