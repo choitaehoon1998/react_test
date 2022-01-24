@@ -1,6 +1,7 @@
 import "./Validation.css";
 import React, { useState } from "react";
 import CustomDatepicker from "./component/CustomDatepicker";
+import Tagsinput from "./component/Tagsinput";
 
 export default function TopLabelsIn() {
   return (
@@ -8,7 +9,7 @@ export default function TopLabelsIn() {
       <div className="form-frame frame">
         <div className="card">
           <form action="#">
-            <label>Top Labels Over Line</label>
+            <label>Top Labels In Put</label>
 
             {/* 이메일 */}
             <div className="form-groups has-top-label">
@@ -33,16 +34,9 @@ export default function TopLabelsIn() {
             {/* 태그 */}
             <div className="form-groups has-top-label">
               <label className="lable-font">Tags</label>
-              <div className="react-tagsinput">
-                <span>
-                  <input
-                    type={"text"}
-                    placeholder="Add a tag"
-                    className="form-control"
-                  ></input>
-                </span>
-              </div>
+              <Tagsinput className="form-control" />
             </div>
+
             {/* 날짜 */}
             <div className="form-groups has-top-label">
               <label className="label-font">Date picker</label>

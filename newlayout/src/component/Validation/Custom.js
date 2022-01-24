@@ -3,6 +3,7 @@ import CustomDatepicker from "./component/CustomDatepicker";
 import ReactSelectFix from "./component/ReactSelectFix";
 import DropSelect from "./component/DropSelect";
 import Switch from "./component/Switch";
+import Tagsinput from "./component/Tagsinput";
 
 export default function Custom() {
   return (
@@ -284,9 +285,10 @@ export default function Custom() {
           </div>
 
           {/* 태그 -오류  */}
-          {/* <div className=" form-groups">
+          <div className=" form-groups">
             <label className="lable-font">Tags</label>
-          </div> */}
+            <Tagsinput />
+          </div>
 
           {/* 스위치 */}
           <div className="form-groups">

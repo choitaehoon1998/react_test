@@ -1,6 +1,8 @@
 import "./Validation.css";
 import React, { useState } from "react";
 import CustomDatepicker from "./component/CustomDatepicker";
+import Tagsinput from "./component/Tagsinput";
+import DropSelect from "./component/DropSelect";
 
 export default function TopLabelsOver() {
   return (
@@ -33,35 +35,19 @@ export default function TopLabelsOver() {
             {/* 태그 */}
             <div className="form-groups has-float-label">
               <label className="lable-font">Tags</label>
-              <div className="react-tagsinput">
-                <span>
-                  <input
-                    type={"text"}
-                    placeholder="Add a tag"
-                    className="form-control"
-                  ></input>
-                </span>
-              </div>
+              <Tagsinput />
             </div>
+
             {/* 날짜 */}
             <div className="form-groups has-float-label">
               <label className="label-font">Date picker</label>
-              <div className="react-datePicker-wrapper">
-                <CustomDatepicker />
-              </div>
+              <CustomDatepicker className="form-control" />
             </div>
 
             {/* 리액트 셀렉션으로 교체 */}
             <div className="form-groups has-float-label">
               <label className="lable-font">select</label>
-              <select name="select" className="form-control">
-                <option value={"Hello"}>안녕하세요</option>
-                <option value={"Food"}>Food</option>
-                <option value={"sky"}>Sky</option>
-                <option value={"Sleep"}>Sleep</option>
-                <option value={"bed"}>bed</option>
-                <option value={"Dog"}>Dog</option>
-              </select>
+              <DropSelect className="form-control" />
             </div>
 
             <button type="submit" className="btn btn-color">
