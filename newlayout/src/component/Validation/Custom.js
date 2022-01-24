@@ -1,6 +1,8 @@
-import "./Validation.css";
 import React, { useState } from "react";
 import CustomDatepicker from "./component/CustomDatepicker";
+import ReactSelectFix from "./component/ReactSelectFix";
+import DropSelect from "./component/DropSelect";
+import Switch from "./component/Switch";
 
 export default function Custom() {
   return (
@@ -17,50 +19,34 @@ export default function Custom() {
               className="form-control"
               value={"test@test.com"}
             ></input>
-            <div className="feedBack">Please enter your name</div>
           </div>
 
           {/* select 시작 */}
           <div className=" form-groups">
             <label className="lable-font">select</label>
-            <select name="select" className="form-control">
-              <option value={"select an option"}>select an option...</option>
-              <option value={"1"}>1</option>
-              <option value={"2"}>2</option>
-              <option value={"3"}>3</option>
-              <option value={"4"}>4</option>
-              <option value={"5"}>5</option>
-            </select>
+            <DropSelect />
             <div className="feedBack">Please enter your email</div>
           </div>
 
-          {/* <div className=" form-groups">
+          <div className=" form-groups">
             <label className="lable-font">React Select</label>
-            <select name="react select" className="form-control">
-              <option value={"select an option"}>Food</option>
-              <option value={"1"}>1</option>
-              <option value={"2"}>2</option>
-              <option value={"3"}>3</option>
-              <option value={"4"}>4</option>
-              <option value={"5"}>5</option>
-            </select>
+            <ReactSelectFix />
             <div className="feedBack">Pick at least 3 tags</div>
-          </div> */}
-          {/* 태그 선택은 시간 걸림 */}
+          </div>
 
           {/*    체크박스 시작 */}
 
           {/* 싱글체크박스 */}
           <div className="form-groups">
             <label className="lable-font">Single Checkbox</label>
-            <div>
-              <input
-                type={"checkbox"}
-                name="single checkbox"
-                className="form-control ck-position"
-              ></input>
-              <label className="label-font-second">Agree to something</label>
-            </div>
+
+            <input
+              type={"checkbox"}
+              name="single checkbox"
+              className="ck-position form-control"
+            ></input>
+            <label className="label-font-second">Agree to something</label>
+
             <div className="feedBack">Must agree to something</div>
           </div>
 
@@ -219,27 +205,15 @@ export default function Custom() {
             </fieldset>
           </div>
 
-          {/* Tags */}
-          <div className="form-groups">
+          {/* 태그  */}
+          <div className=" form-groups">
             <label className="lable-font">Tags</label>
-            <div className="react-tagsinput">
-              <span>
-                <input
-                  type={"text"}
-                  placeholder="Add a tag"
-                  className="form-control"
-                ></input>
-              </span>
-            </div>
           </div>
 
           {/* 스위치 */}
           <div className="form-groups">
-            <label className="label-font">switch</label>
-            <input type="checkbox" id="switch"></input>
-            <label for="switch" class="switch_label">
-              <span class="onf_btn"></span>
-            </label>
+            <label className="label-font label-position">switch</label>
+            <Switch />
           </div>
 
           {/*  datepicker */}

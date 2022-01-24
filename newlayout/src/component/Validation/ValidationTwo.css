@@ -102,3 +102,26 @@
   top: 12px;
   width: 5px;
 }
+
+/* basic */
+/* checkbox */
+.group-basic {
+  position: relative;
+}
+
+/* Label Right Position Helpers */
+.cardflex {
+  margin-top: 50px;
+}
+.cardflex > form > label {
+  display: block;
+  margin-bottom: 30px;
+}
+.left-error-frame {
+  width: 50%;
+  display: inline-block;
+}
+.right-error-frame {
+  display: inline-block;
+  width: 50%;
+}
