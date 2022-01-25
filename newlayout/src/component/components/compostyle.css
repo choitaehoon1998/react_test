@@ -141,7 +141,7 @@ svg:hover ~ svg {
 
 /* 드랍존 */
 
-.dropzone{
+/* .dropzone{
     text-align: center;
     font-size: 15px;
     padding: 30px 0 30px 0 ;
@@ -151,16 +151,8 @@ svg:hover ~ svg {
 }
 .dropzone:hover{
     cursor: pointer;
-}
+} */
 
 .width{
     width: 300px;
-}
-.tag-item{
-    width: 15px;
-    height: 10px;
-    background: chartreuse;
-}
-.del-btn{
-    background: chartreuse;
 }
