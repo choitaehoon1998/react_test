@@ -1,7 +1,125 @@
+.mg-b5 {
+  margin-bottom: 5px;
+}
+/* content */
+.content-wrap {
+  height: auto;
+}
+.content {
+  margin-top: 40px;
+  margin-left: 210px;
+  height: auto;
+}
+.content-view {
+  margin-top: 40px;
+  margin-left: 30px;
+  height: auto;
+}
+.content-main {
+  padding: 0 40px 0 40px;
+}
+.content-title {
+  margin: 40px 0 40px 0;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #444;
+}
+.content-title h3 {
+  margin: 20px 0 10px 0;
+  font-size: 20px;
+}
+.content-box {
+  border-radius: 10px;
+  background-color: rgb(223, 223, 223);
+  width: 100%;
+}
+.box-body {
+  padding: 10px 10px 10px 10px;
+}
+.box-body li {
+  list-style-type: none;
+}
+.box-title {
+  font-size: 18px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid rgb(124, 124, 124);
+  margin-bottom: 8px;
+}
+.box-subtitle {
+  font-size: 13px;
+  color: rgb(107, 107, 107);
+  padding-left: 13px;
+  margin-bottom: 3px;
+}
+.div-box {
+  text-align: center;
+  max-width: max-content;
+  border: 1px solid #444;
+  padding: 3px 3px 3px 3px;
+}
+
+/* 사이드 메뉴 열고 닫기 */
+.sideButton {
+  position: absolute;
+  top: 105px;
+  left: 210px;
+  background: #444;
+  z-index: 10;
+  padding: 5px 2px 8px 2px;
+}
+.sideButton::before {
+  font-size: 14px;
+  content: "<";
+  color: #fff;
+}
+.sideButton-ac {
+  position: absolute;
+  top: 105px;
+  left: 0px;
+  background-color: #444;
+  padding: 5px 2px 8px 2px;
+}
+.sideButton-ac::before {
+  font-size: 14px;
+  content: ">";
+  color: #fff;
+}
+.itemList-hidden {
+  display: none;
+}
+/* 사이드 목록 모두 열고 닽기 */
+.itemListButton {
+  position: absolute;
+  top: 135px;
+  left: 210px;
+  background-color: #444;
+  z-index: 10;
+  padding: 5px 0 8px 0;
+}
+.itemListButton::before {
+  font-size: 15px;
+  color: #ffffff;
+  content: "↓";
+}
+.itemListButton-ac {
+  position: absolute;
+  top: 135px;
+  left: 210px;
+  background-color: #444;
+  z-index: 10;
+  padding: 5px 0 8px 0;
+}
+.itemListButton-ac::before {
+  font-size: 15px;
+  color: #ffffff;
+  content: "↑";
+}
+
 /*  앱 css */
 #header {
-  max-width: 1920px;
-  height: 85px;
+  font-family: "Noto-Sans-CJK-KR";
+  max-width: 100%;
+  min-width: 1300px;
+  max-height: 100px;
   background-color: #222;
 }
 .header-top {
@@ -51,41 +169,58 @@
 
 #header .nav {
   background-color: #444;
-  height: 48px;
+  height: 40px;
 }
 #header .nav ul {
   width: 100%;
   display: flex;
   justify-content: flex-start;
   line-height: 2.5;
-  height: auto;
+  background-color: #444;
 }
 #header .nav ul .navlist {
+  background-color: #444;
+  min-width: 97px;
   vertical-align: middle;
-  width: 100px;
+  border-right: 0.5px solid #222;
+  border-top: 1px solid #444;
+  width: 97px;
   text-align: center;
-  height: 48px;
-  position: relative;
 }
-#header .nav ul .navlist::after {
-  content: "";
-  height: 46px;
-  border: 1px solid rgb(59, 59, 59);
-  position: absolute;
-  right: 0;
+.navlist {
+  background-color: #444;
+  min-width: 97px;
+  vertical-align: middle;
+  border-right: 0.5px solid #222;
+  border-top: 1px solid #444;
+  width: 97px;
+  text-align: center;
+}
+.navlist:hover {
+  background-color: rgb(88, 88, 88);
+  min-width: 97px;
+  vertical-align: middle;
+  border-right: 0.5px solid #222;
+  border-top: 1px solid #444;
+  width: 97px;
+  text-align: center;
 }
 #header .nav ul .navlist:hover {
-  background-color: #555;
+  background-color: rgb(88, 88, 88);
+  min-width: 97px;
+  vertical-align: middle;
+  border-right: 0.5px solid #222;
+  border-top: 1px solid #444;
+  width: 97px;
+  text-align: center;
 }
 .navListActive {
   background-color: rgb(185, 13, 13);
   vertical-align: middle;
-  width: 100px;
+  margin: 0 0.5px 0 0.5px;
+  width: 97px;
+  min-width: 97px;
   text-align: center;
-}
-.navListActive a {
-  font-weight: bold;
-  font-size: 14px;
 }
 
 /* #header .nav ul li:before {
@@ -101,24 +236,26 @@
   padding-right: 0;
   font-size: 14px;
 }
-/*                                     content */
-.content-wrap {
-  height: auto;
+.topLinkText {
+  font-size: 15px;
+  color: #ffffff;
 }
-/*                                   side nav */
+
+/* side nav */
+
 .gnb-sideMenu {
-  max-width: 220px;
-  border-right: 1px solid rgb(173, 170, 170);
-  margin-top: 13px;
+  top: 90px;
+  position: absolute;
   height: 100%;
+  max-width: 210px;
+  min-width: 210px;
+  border-right: 1px solid rgb(173, 170, 170);
 }
-.sideMenuName {
-  height: 150px;
-  text-align: center;
-  line-height: 2.5;
-  font-size: 20px;
-  font-weight: 800;
+.gnb-sideMenu-ac {
+  display: none;
+  visibility: hidden;
 }
+
 .listname {
   background-color: rgb(134, 134, 134);
   height: 36px;
@@ -127,25 +264,33 @@
   color: #fff;
   font-weight: bold;
   cursor: pointer;
+  margin-top: 1px;
+  max-width: 210px;
 }
-.show-menu {
-  height: auto;
-  padding-bottom: 20px;
+.listname-active {
+  background-color: #444;
+  height: 36px;
+  line-height: 36px;
+  padding-left: 15px;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 1px;
+  max-width: 210px;
 }
-.show-menu li {
-  padding: 7px 4px 8px 25px;
-  background-color: #fff;
-  font-size: 14px;
-}
-.hide-menu {
-  height: auto;
-}
-.hide-menu li {
-  display: none;
-  font-size: 14px;
+.list-group-active {
+  display: block;
 }
 
-/* .show-menu li.active:before {
+.listGroup-hidden {
+  display: none;
+  visibility: hidden;
+}
+.listGroup li {
+  padding: 8px 4px 8px 25px;
+  background-color: #fff;
+}
+.listGroup li.acitve::before {
   content: "";
   display: inline-block;
   width: 6px;
@@ -155,4 +300,79 @@
   border-right: 1px solid rgb(197, 197, 197);
   border-top: 1px solid rgb(197, 197, 197);
   transform: rotate(45deg);
-} */
+}
+
+.content-body > div {
+  margin: 30px;
+}
+
+.modalHeader {
+  display: flex;
+  border-bottom: 1px solid #000;
+}
+
+.modalTitle {
+  align-self: center;
+  font-size: 20px;
+  width: 50%;
+  margin: 5px;
+}
+
+.modalButton {
+  display: flex;
+  justify-content: flex-end;
+  width: 50%;
+}
+
+.modalButton > button {
+  margin: 5px;
+}
+
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  position: relative;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  outline: none !important;
+  border: 1px solid #eeeeee;
+  border-radius: 5px;
+  background: #fbfbfb;
+}
+
+input[type="checkbox"]::before {
+  content: "\2713";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  overflow: hidden;
+  transform: scale(0) translate(-50%, -50%);
+  line-height: 1;
+}
+
+input[type="checkbox"]:hover {
+  border-color: rgba(170, 170, 170, 0.5);
+}
+
+input[type="checkbox"]:checked {
+  background-color: #00365a;
+  border-color: rgba(255, 255, 255, 0.3);
+  color: white;
+}
+
+input[type="checkbox"]:checked::before {
+  border-radius: 2px;
+  transform: scale(1) translate(-50%, -50%);
+}
+
+.checkboxLabel {
+  position: absolute;
+  margin-left: 5px;
+  line-height: 20px;
+}
+
+input[type="checkbox"]:disabled {
+  background-color: rgba(58, 58, 58, 0.25) !important;
+  border-color: rgba(255, 255, 255, 0.3);
+  color: white;
+}

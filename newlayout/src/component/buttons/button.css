@@ -1,0 +1,109 @@
+.mgb-5      {margin-bottom: 5px;}
+.mgside-5   {margin: 0 5px 0 5px;}
+
+
+.btn-color:hover {
+    background-color: rgb(139, 9, 9);
+}
+.btn-color {
+    background-color: rgb(185, 13, 13);
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+.btn-color:active{
+    background: rgb(185, 13, 13);
+}
+
+
+.btn{
+    border-radius: 50px;
+    outline: initial !important;
+    box-shadow: none !important;
+    font-size: 0.8rem;
+    padding: 0.2rem 1.4rem;
+    width: max-content;
+    height: 31px;
+}
+
+
+.btn-big{
+    border-radius: 50px;
+    outline: initial !important;
+    box-shadow: none !important;
+    font-size: 1.5rem;
+    padding: 0.2rem 1.75rem;
+    width: max-content;
+    height: 44px;
+}
+
+
+.btn-small{
+    border-radius: 50px;
+    outline: initial !important;
+    box-shadow: none !important;
+    font-size: 0.5rem;
+    padding: 0.2rem 1.0rem;
+    width: max-content;
+    height: 20px;
+
+}
+
+
+.btn-link{
+    text-decoration: underline;
+    border-radius: 50px;
+    outline: initial !important;
+    box-shadow: none !important;
+    font-size: 0.8rem;
+    padding: 0.2rem 1.4rem;
+    width: max-content;
+    height: 31px;
+}
+
+
+.btn-miss{
+    border-radius: 50px;
+    outline: initial !important;
+    box-shadow: none !important;
+    font-size: 0.8rem;
+    padding: 0.2rem 1.4rem;
+    width: max-content;
+    height: 31px;
+    border: 1px solid rgb(175, 175, 175);
+   
+    cursor: not-allowed;
+}
+
+
+.btn-radius-left{
+    border-right: 1px solid rgb(139, 9, 9);
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    outline: initial !important;
+    box-shadow: none !important;
+    font-size: 0.8rem;
+    padding: 0.2rem 1.4rem;
+    width: max-content;
+    height: 31px;
+}
+.btn-radius-right{
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    outline: initial !important;
+    box-shadow: none !important;
+    font-size: 0.8rem;
+    padding: 0.2rem 1.4rem;
+    width: max-content;
+    height: 31px;
+}
+.btn-radius-none{
+    border-right: 1px solid rgb(139, 9, 9);
+    outline: initial !important;
+    box-shadow: none !important;
+    font-size: 0.8rem;
+    padding: 0.2rem 1.4rem;
+    width: max-content;
+    height: 31px;
+}
