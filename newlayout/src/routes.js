@@ -1,3 +1,4 @@
+import React from "react";
 import { useRoutes } from "react-router-dom";
 import Goods from "./component/Goods";
 import Home from "./component/Home";

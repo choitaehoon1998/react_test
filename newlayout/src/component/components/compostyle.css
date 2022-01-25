@@ -152,3 +152,15 @@ svg:hover ~ svg {
 .dropzone:hover{
     cursor: pointer;
 }
+
+.width{
+    width: 300px;
+}
+.tag-item{
+    width: 15px;
+    height: 10px;
+    background: chartreuse;
+}
+.del-btn{
+    background: chartreuse;
+}

@@ -4,7 +4,7 @@ import ContentTitle from "../component/content/ContentTitel";
 import { Switch, SmlSwitch } from "../component/components/switch";
 import { Slider } from "../component/components/slider";
 import { CountingStar } from "../component/components/countingstar";
-import { Tags } from "../component/components/tags";
+import Tags from "../component/components/tags";
 import {DropZone} from "../component/components/dropzone";
 
 export default function Components() {
@@ -69,6 +69,19 @@ export default function Components() {
 
                             <div className="form-groups">
                                 <DropZone></DropZone>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div className="left-frame">
+                        <div className="form-frame frame1">
+                            <label>
+                                태그
+                            </label>
+
+                            <div className="form-groups">
+                                <Tags></Tags>
                             </div>
 
                         </div>

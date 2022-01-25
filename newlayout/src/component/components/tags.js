@@ -1,47 +1,73 @@
-// import React,{useCallback, useState} from "react";
-// import "./compostyle.css";
+import React,{useEffect} from "react";
+import "./compostyle.css";
 
-// export const Tags = () => {
-//     const [tag, setTag] = useState<string | ''>('')
-//     const [tagArr, setTagArr] = useState<string[0] | []>([])
+const Tags = () => {
+    document.addEventListener("DOMContentLoaded",function () {
+        var tag = {};
+        var counter = 0;
 
-//     const onKeyup = useCallback(
-//         (e) =>{
-//             if(process.brower){
-//                 const $HashWrapOuter = document.querySelector('.HashWrapOuter')
-//                 const $HashWrapInner = document.createElement('div')
-//                 $HashWrapInner.className = 'HashWrapInner'
+        function addTag (value){
+            tag[counter] = value;
+            counter++;
+        }
 
-//                 $HashWrapInner.addEventListener('click', ()=>{
-//                     $HashWrapOuter?.removeChild($HashWrapInner)
-//                     console.log($HashWrapInner.innerHTML)
-//                     setTagArr(tagArr.filter((tag) => tag))
-//                 })
+        function marginTag () {
+            return Object.values(tag).filter(function (word){
+                return word !== "";
+            });
+        }
 
-//                 if (e.keyCode === 13 && e.target.value.trim() !== ''){
-//                     console.log('Enter Key 입력됨', e.target.value)
-//                     $HashWrapInner.innerHTML = '#' + e.target.value
-//                     $HashWrapOuter?.appendChild($HashWrapInner)
-//                     setTagArr((tagArr) => [...tagArr, tagArr])
-//                     setTag('')
-//                 }
-//             }
-//         },
-//         [tag, tagArr]
-//     )
-//     return(
-//         <div className="hashDivrap">
-//         <div className="tagWrap" >
-//             <div className="HashWrapOuter"></div>
-//                 <input
-//                 className="HashInput"
-//                 type="text"
-//                 value={hashtag}
-//                 onchange={onChangeHashtag}
-//                 onKeyUp={onKeyup}
-//                 placeholder="입력"
-//                 />
-//             </div>
-//         </div>
-//     );
-// }
+        ("#tag-form").on("submit", function (e){
+            let value = marginTag();
+            ("#rdTag").val(value);
+
+            (this).submit();
+            
+        });
+
+        ("#tag").on("keypress",function (e){
+            var self = (this);
+
+            if(e.key === "Enter" || e.keyCode == 32){
+
+                var tagValue = self.val();
+                console.log(tagValue);
+                debugger
+                if(tagValue !== ""){
+
+                    var result = Object.values(tag).filter(function (word){
+                        return word === tagValue;
+                    })
+                    if(result.length == 0 ){
+                        ("#tag-list").append("<li class='tag-item'>"+tagValue+"<span class='del-btn' idx='"+counter+"'>x</span></li>");
+                        addTag(tagValue);
+                        self.val("");
+                    }else{
+                    }
+                }
+                e.preventDefault();
+                
+            }
+        });
+        (document).on("click", ".del-btn", function(e){
+            var index = (this).attr("idx");
+            tag[index]="";
+            (this).parent().remove();
+        });
+        
+    })
+    return(
+        <>
+        <div>
+            <input type="hidden" value="" name="tag" id="rdTag" />
+        </div>
+        
+        <ul id="tag-list"></ul>
+
+        <div>
+            <input type="text" id="tag" />
+        </div>
+        </>
+    );
+}
+export default Tags;
