@@ -3,6 +3,9 @@ import "./compage.css";
 import ContentTitle from "../component/content/ContentTitel";
 import { Switch, SmlSwitch } from "../component/components/switch";
 import { Slider } from "../component/components/slider";
+import { CountingStar } from "../component/components/countingstar";
+import { Tags } from "../component/components/tags";
+import {DropZone} from "../component/components/dropzone";
 
 export default function Components() {
     return( 
@@ -40,6 +43,32 @@ export default function Components() {
                             <div className="form-groups">
                                 <p>기본 슬라이더</p>
                                 <Slider  min="0" max="100"></Slider>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div className="left-frame">
+                        <div className="form-frame frame1">
+                            <label>
+                                별점
+                            </label>
+
+                            <div className="form-groups">
+                               <CountingStar></CountingStar> 
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div className="left-frame">
+                        <div className="form-frame frame1">
+                            <label>
+                                드랍존
+                            </label>
+
+                            <div className="form-groups">
+                                <DropZone></DropZone>
                             </div>
 
                         </div>
