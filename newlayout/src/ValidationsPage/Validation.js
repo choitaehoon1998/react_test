@@ -1,17 +1,27 @@
+// form 탬플릿 페이지입니다.
+
+// 아래 목록은 터미널에서 다운로드하는 컴포넌트 목록입니다. 설치해주세요.
+// npm install react-tagsinput --legacy-peer-deps 
+// npm install formik --save
+// npm i yup
+// npm install react-datepicker --save
+// npm i react-select
+
+import React from "react";
 import { BrowserRouter, Link, Route } from "react-router-dom";
 import { useState } from "react";
-import FieldLevel from "../component/Validation/FieldLevel";
-import Schema from "../component/Validation/Schema";
-import Custom from "../component/Validation/Custom";
-import TopLabelsOver from "../component/Validation/TopLabelsOver";
-import TopLabelsIn from "../component/Validation/TopLabelIn";
-import Basic from "../component/Validation/Basic";
-import CustomRules from "../component/Validation/CustomRules";
-import DefaultValues from "../component/Validation/DefaultValues";
-import ToolTipPosition from "../component/Validation/TooltipPositon";
-import FormLevel from "../component/Validation/FormLevel";
 
-function Validation() {
+// css
+import "../component/form/formcompo-style.css";
+
+// 컴포넌트 import
+import NameInput from "../component/form/nameinput";
+import EmailInput from "../component/form/emailinput";
+import SmmitBnt from "../component/form/smmitbnt";
+import TextArea from "../component/form/textarea";
+
+// 페이지 내용 시작
+export default function Validation() {
   return (
     <div className="content-wrap">
       <div className="content">
@@ -20,32 +30,78 @@ function Validation() {
             <h2>Validation</h2>
           </div>
 
-          <div className=" main-flex">
-            <div className="left-frame">
-              <h3>Formik Validation</h3>
-              <FieldLevel />
-              <FormLevel />
-              <Schema />
-              <Custom />
-              <TopLabelsOver />
-              <TopLabelsIn />
+          {/* 왼쪽 프레임 */}
+          <div className="left-frame">
+            <label>Formik Validation</label>
+
+            {/* form 기본 */}
+            <div className="form-frame frame1">
+              <label >Field Level Validation</label>
+              <div className="form-groups">
+                <label>Name</label>
+                <NameInput />
+              </div>
+              <div className="form-groups">
+                <label>Email</label>
+                <EmailInput />
+              </div>
+              <SmmitBnt mame="Smmit"></SmmitBnt>
             </div>
-            <div className="right-frame">
-              <h3>Availity Reactstrap Validation</h3>
-              <Basic />
-              <CustomRules />
-              <DefaultValues />
+
+            {/* form 기본 2 */}
+
+            <div className="form-frame frame1">
+              <label >Form Level Validation</label>
+              <div className="form-groups">
+                <label>Name</label>
+                <NameInput />
+              </div>
+              <div className="form-groups">
+                <label>Email</label>
+                <EmailInput />
+              </div>
+              <SmmitBnt mame="Smmit"></SmmitBnt>
+            </div>
+
+            {/* Validation Schema with Yup */}
+            <div className="form-frame frame1">
+
+              <label >Validation Schema with Yup</label>
+
+              <div className="form-groups">
+                <label>first Name</label>
+                <NameInput />
+              </div>
+
+              <div className="form-groups">
+                <label>last Name</label>
+                <NameInput />
+              </div>
+
+              <div className="form-groups">
+                <label>Email</label>
+                <EmailInput />
+              </div>
+
+              <div className="form-groups">
+                <label>Details</label>
+                  <TextArea />
+              </div>
+
+              <SmmitBnt mame="Smmit"></SmmitBnt>
+            
             </div>
           </div>
 
-          <div className="bottom-frame">
-            <h3>Tooltip Positioning</h3>
-            <ToolTipPosition />
+          {/* 오른쪽 프레임 */}
+          <div className="right-frame">
+            
           </div>
+
+          {/* 아래 프레임 */}
+          <div className="bottom-frame"></div>
         </div>
       </div>
     </div>
   );
 }
-
-export default Validation;
