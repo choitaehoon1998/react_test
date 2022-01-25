@@ -13,6 +13,19 @@
   display: block;
 }
 
+/* Select style */
+.css-1s2u09g-control {
+  width: 100% !important;
+}
+
+/*  Tagsinput style */
+
+.react-tagsinput {
+  padding: 1.7rem 0rem 0.2rem 0.4rem !important;
+  width: 100% !important;
+}
+*/
+
 /* Tooltip */
 .col2 {
   top: 0px;

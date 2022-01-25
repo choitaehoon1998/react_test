@@ -73,6 +73,21 @@
 .feedBack {
   display: none;
 }
+.feedBackOpen {
+  display: block;
+  position: absolute;
+  top: -8px;
+  left: 50px;
+  border: 2px solid rgb(139, 9, 9);
+  width: 12.5em;
+  font-size: 12px;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  text-align: center;
+  border-radius: 5px;
+  background-color: #fff;
+  z-index: 10;
+}
 .feedBackActive {
   display: block;
   position: absolute;
@@ -390,7 +405,6 @@ input[id="Custom-radio4"] {
 }
 
 /* ToplabelINPUT */
-/* 제목이 인풋에 들아가 있는 방식 */
 
 .has-top-label {
   display: block;

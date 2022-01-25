@@ -284,7 +284,7 @@ export default function Custom() {
             <div className="feedBack">Must agree to something</div>
           </div>
 
-          {/* 태그 -오류  */}
+          {/* 태그   */}
           <div className=" form-groups">
             <label className="lable-font">Tags</label>
             <Tagsinput />
