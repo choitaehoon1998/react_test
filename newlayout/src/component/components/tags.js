@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import TagsInput from "react-tagsinput";
-import "react-tagsinput/react-tagsinput.css";
+import "./compostyle.css";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 
 export default class App extends React.Component {
