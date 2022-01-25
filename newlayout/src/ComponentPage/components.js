@@ -45,6 +45,11 @@ export default function Components() {
                             <label>
                                 스위치
                             </label>
+                            <label>
+                                스위치
+                            </label>
+                            
+
                             <div className="form-groups">
                                 <p>기본 스위치</p>
                                 <Switch></Switch>
@@ -54,6 +59,8 @@ export default function Components() {
                                 <p>작은 스위치</p>
                                 <SmlSwitch></SmlSwitch>
                             </div>
+
+
                         </div>
                     </div>
 
@@ -96,7 +103,6 @@ export default function Components() {
 
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
