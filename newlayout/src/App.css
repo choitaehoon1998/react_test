@@ -1,4 +1,4 @@
-.mg-b5{
+.mg-b5 {
   margin-bottom: 5px;
 }
 /* content */
@@ -27,30 +27,30 @@
   margin: 20px 0 10px 0;
   font-size: 20px;
 }
-.content-box{
+.content-box {
   border-radius: 10px;
   background-color: rgb(223, 223, 223);
   width: 100%;
 }
-.box-body{
+.box-body {
   padding: 10px 10px 10px 10px;
 }
-.box-body li{
+.box-body li {
   list-style-type: none;
 }
-.box-title{
+.box-title {
   font-size: 18px;
   padding-bottom: 5px;
   border-bottom: 1px solid rgb(124, 124, 124);
   margin-bottom: 8px;
 }
-.box-subtitle{
+.box-subtitle {
   font-size: 13px;
   color: rgb(107, 107, 107);
   padding-left: 13px;
   margin-bottom: 3px;
 }
-.div-box{
+.div-box {
   text-align: center;
   max-width: max-content;
   border: 1px solid #444;
@@ -300,4 +300,30 @@
   border-right: 1px solid rgb(197, 197, 197);
   border-top: 1px solid rgb(197, 197, 197);
   transform: rotate(45deg);
+}
+
+.content-body > div {
+  margin: 30px;
+}
+
+.modalHeader {
+  display: flex;
+  border-bottom: 1px solid #000;
+}
+
+.modalTitle {
+  align-self: center;
+  font-size: 20px;
+  width: 50%;
+  margin: 5px;
+}
+
+.modalButton {
+  display: flex;
+  justify-content: flex-end;
+  width: 50%;
+}
+
+.modalButton > button {
+  margin: 5px;
 }
