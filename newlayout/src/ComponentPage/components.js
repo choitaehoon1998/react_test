@@ -3,6 +3,7 @@ import "./compage.css";
 import ContentTitle from "../component/content/ContentTitel";
 import { Switch, SmlSwitch } from "../component/components/switch";
 import { Slider } from "../component/components/slider";
+import CheckboxCoponent from "../component/components/checkbox";
 
 export default function Components() {
     return( 
@@ -15,9 +16,32 @@ export default function Components() {
                     <div className="left-frame">
                         <div className="form-frame frame1">
                             <label>
+                                Custom Checkbox
+                            </label>
+                            <div className="form-groups">
+                                <CheckboxCoponent id ='check1'>Check this custom checkbox</CheckboxCoponent>
+                                <CheckboxCoponent id= 'check2'>Or this one</CheckboxCoponent>
+                                <CheckboxCoponent id= 'check3' disabled='true' >But not this disabled one</CheckboxCoponent>
+                            </div>
+
+                            <label>
+                                Custom Radios
+                            </label>
+                            <div className="form-groups">
+                                
+                            </div>
+                        
+
+                        </div>
+                    </div>
+
+                    
+
+                    <div className="left-frame">
+                        <div className="form-frame frame1">
+                            <label>
                                 스위치
                             </label>
-                            
                             <div className="form-groups">
                                 <p>기본 스위치</p>
                                 <Switch></Switch>
@@ -27,7 +51,6 @@ export default function Components() {
                                 <p>작은 스위치</p>
                                 <SmlSwitch></SmlSwitch>
                             </div>
-
                         </div>
                     </div>
 

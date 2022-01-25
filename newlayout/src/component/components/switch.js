@@ -3,10 +3,10 @@ import "./compostyle.css";
 
 export const Switch = () => {
     return(
-        <div class="wrapper">
+        <div className="wrapper">
             <input type="checkbox" id="switch"/>
-                <label for="switch" class="switch_label">
-                    <span class="onf_btn" />
+                <label htmlFor="switch" className="switch_label">
+                    <span className="onf_btn" />
                 </label>
         </div>
     );
@@ -14,10 +14,10 @@ export const Switch = () => {
 
 export const SmlSwitch = () => {
     return(
-        <div class="wrapper">
+        <div className="wrapper">
             <input type="checkbox" id="smlswitch"/>
-                <label for="smlswitch" class="smlswitch_label">
-                    <span class="smlonf_btn" />
+                <label htmlFor="smlswitch" className="smlswitch_label">
+                    <span className="smlonf_btn" />
                 </label>
         </div>
     );
