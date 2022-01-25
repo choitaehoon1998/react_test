@@ -3,7 +3,6 @@ import { useState} from "react";
 import { Link } from "react-router-dom";
 import { useResultContext } from "../../Context";
 
-
 export default function HEADER() {
   const [menuNav, setMenuNav] = useState(0); // 헤더 style 변경 state
   const {setSideMenu} = useResultContext();
@@ -37,16 +36,17 @@ export default function HEADER() {
               >
                 <option value={"menu"}>메뉴</option>
                 <option value={"member"}>회원</option>
+                
               </select>
             </div>
             <div className="headerseach2">
-              <div id="header-SeachText">
-                <input
-                  type="text"
-                  className="from1"
-                  placeholder="메뉴검색"
-                ></input>
-              </div>
+                <div id="header-SeachText">
+                  <input
+                    type="text"
+                    className="from1"
+                    placeholder="메뉴검색"
+                  ></input>
+                </div>
             </div>
           </li>
         </ul>
@@ -54,6 +54,7 @@ export default function HEADER() {
     </div>
     <div className="nav">
         <ul>
+
           <Link to="/home" className={menuNav === 1 ? "navListActive" : "navlist"} onClick={() => {
             setMenu(1);
             }}>

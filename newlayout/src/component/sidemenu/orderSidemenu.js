@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import SideMenuTitle from "./sidemenu/SideMenuName";
 
 export default function ORDERSIDEMENU() {
 const[side, setSide]=useState(0);
@@ -28,9 +29,8 @@ const[item3, setItem3]=useState(0);
       </div>
 
       <div className={side === 1 ?"gnb-sideMenu-ac" : "gnb-sideMenu"}>
-      <div className="sideMenuName">
-        <h2>주문/배송</h2>
-      </div>
+      
+      <SideMenuTitle title="주문/배송"></SideMenuTitle>
 
       <div className={item1 === 1 ? "listname-active" : "listname"} onClick={() => {
         if (item1 === 0) {

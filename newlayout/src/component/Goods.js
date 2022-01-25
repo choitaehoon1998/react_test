@@ -1,15 +1,16 @@
+import ContentTitle from "./content/ContentTitel";
+
 export default function Goods(){
     return(
         <>
         <div className="content-wrap">
             <div className="content">
                 <div className="content-main">
-                    <div className="content-title">
-                        <h3>상품</h3>
-                    </div>
+                    <ContentTitle title="상품"></ContentTitle>
                 </div>
             </div>
         </div>
+        
         </>
     );
 }
