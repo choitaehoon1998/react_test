@@ -8,6 +8,8 @@ import { CountingStar } from "../component/components/countingstar";
 import { Tags } from "../component/components/tags";
 import {DropZone} from "../component/components/dropzone";
 import AutosuggestComponent from "../component/components/autosuggestComponent";
+import DatePickerComponent from "../component/components/datePickerComponent";
+
 
 export default function Components() {
     return( 
@@ -47,6 +49,20 @@ export default function Components() {
                             </label>
                             <div className="form-groups">
                                 <AutosuggestComponent></AutosuggestComponent>
+                            </div>
+                        
+
+                        </div>
+                    </div>
+
+                    <div className="left-frame">
+                        <div className="form-frame frame1">
+                            <label>
+                                Date Picker
+                            </label>
+                            <span>Date with Time</span>
+                            <div className="form-groups">
+                                <DatePickerComponent></DatePickerComponent>
                             </div>
                         
 
