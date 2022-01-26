@@ -8,8 +8,6 @@
 // npm i react-select
 
 import React from "react";
-import { BrowserRouter, Link, Route } from "react-router-dom";
-import { useState } from "react";
 
 // css
 import "../component/form/formcompo-style.css";
@@ -31,6 +29,12 @@ import Rank from "../component/form/Rank";
 import NumberInput from "../component/form/numberinput";
 import Mininput from "../component/form/Mininput";
 import MaxInput from "../component/form/maxinput";
+import Regex from "../component/form/Regex";
+import Street from "../component/form/street";
+import Suite from "../component/form/Regex copy";
+import City from "../component/form/city";
+import StateInput from "../component/form/state";
+import ZipInput from "../component/form/zipinput";
 
 // 페이지 내용 시작
 export default function Validation() {
@@ -127,11 +131,11 @@ export default function Validation() {
                     </div>
                     <div className="form-groups">
                       <label>Single Checkbox</label>
-                      <CheckBox>Agree to something</CheckBox>
+                      <CheckBox id="chbox">Agree to something</CheckBox>
                     </div>
                     <div className="form-groups">
                       <label>Custom Single Checkbox</label>
-                      <CheckBox id="chbox1">Agree to something</CheckBox>
+                      <CheckBox id="chbox0">Agree to something</CheckBox>
                     </div>
                     <div className="form-groups">
                       <label>Checkbox Group</label>
@@ -146,31 +150,35 @@ export default function Validation() {
                     <div className="form-groups">
                       <label>Custom Checkbox Group</label>
                       <div className="flexbox">
-                        <CheckBox id="chbox1">food</CheckBox>
-                        <CheckBox id="chbox2">cookie</CheckBox>
-                        <CheckBox id="chbox3">cake</CheckBox>
-                        <CheckBox id="chbox4">apple</CheckBox>
-                        <CheckBox id="chbox5">sorce</CheckBox>
+                        <CheckBox id="chbox6">food</CheckBox>
+                        <CheckBox id="chbox7">cookie</CheckBox>
+                        <CheckBox id="chbox8">cake</CheckBox>
+                        <CheckBox id="chbox9">apple</CheckBox>
+                        <CheckBox id="chbox10">sorce</CheckBox>
                       </div>
                     </div>
                     <div className="form-groups">
                       <label>radio Group</label>
                       <div className="flexbox">
-                        <RadioBox id="chbox1">food</RadioBox>
-                        <RadioBox id="chbox2">cookie</RadioBox>
-                        <RadioBox id="chbox3">cake</RadioBox>
-                        <RadioBox id="chbox4">apple</RadioBox>
-                        <RadioBox id="chbox5">sorce</RadioBox>
+                        <RadioBox id="Radio1">food</RadioBox>
+                        <RadioBox id="Radio2">cookie</RadioBox>
+                        <RadioBox id="Radio3">cake</RadioBox>
+                        <RadioBox id="Radio4" disabled>
+                          apple
+                        </RadioBox>
+                        <RadioBox id="Radio5">sorce</RadioBox>
                       </div>
                     </div>
                     <div className="form-groups">
                       <label>Custom Rradio Group</label>
                       <div className="flexbox">
-                        <RadioBox id="chbox1">food</RadioBox>
-                        <RadioBox id="chbox2">cookie</RadioBox>
-                        <RadioBox id="chbox3">cake</RadioBox>
-                        <RadioBox id="chbox4">apple</RadioBox>
-                        <RadioBox id="chbox5">sorce</RadioBox>
+                        <RadioBox id="Radio6">food</RadioBox>
+                        <RadioBox id="Radio7">cookie</RadioBox>
+                        <RadioBox id="Radio8">cake</RadioBox>
+                        <RadioBox id="Radio9" disabled>
+                          apple
+                        </RadioBox>
+                        <RadioBox id="Radio10">sorce</RadioBox>
                       </div>
                     </div>
                     <div className="form-groups">
@@ -189,6 +197,7 @@ export default function Validation() {
                   </form>
                 </div>
               </div>
+
               {/* Top Labels Over Line */}
               <div className="form-frame frame">
                 <div className="card">
@@ -219,6 +228,7 @@ export default function Validation() {
                   </form>
                 </div>
               </div>
+
               {/* Top Labels Over Line */}
               <div className="form-frame frame">
                 <div className="card">
@@ -251,9 +261,11 @@ export default function Validation() {
               </div>
             </div>
 
-            {/* Basic */}
+            {/* 오른쪽 프레임 */}
             <div className="right-frame">
               <label>Availity Reactstrap Validation</label>
+
+              {/* Basic */}
               <div className="form-frame frame">
                 <div className="card">
                   <form action="#">
@@ -272,15 +284,15 @@ export default function Validation() {
                     </div>
                     <div className="form-groups">
                       <label>Custom Radio Buttons</label>
-                      <RadioBox id="chbox5">sorce</RadioBox>
-                      <RadioBox id="chbox5">cake</RadioBox>
-                      <RadioBox id="chbox5">dessert</RadioBox>
+                      <RadioBox id="Radio11">sorce</RadioBox>
+                      <RadioBox id="Radio12">cake</RadioBox>
+                      <RadioBox id="Radio13">dessert</RadioBox>
                     </div>
                     <div className="form-groups">
                       <label>CUstom Checkbox</label>
                       <div className="flexbox">
-                        <CheckBox id="chbox1">yes</CheckBox>
-                        <CheckBox id="chbox2">no</CheckBox>
+                        <CheckBox id="chbox11">yes</CheckBox>
+                        <CheckBox id="chbox12">no</CheckBox>
                       </div>
                     </div>
 
@@ -320,6 +332,63 @@ export default function Validation() {
                     </div>
                     <div className="form-groups">
                       <label>Regex (^[A-Z]*$)</label>
+                      <Regex />
+                    </div>
+
+                    <SmmitBnt name="Smmit"></SmmitBnt>
+                  </form>
+                </div>
+              </div>
+
+              {/* Default Values */}
+              <div className="form-frame frame">
+                <div className="card">
+                  <form action="#">
+                    <label>Default Values</label>
+
+                    <div className="form-groups">
+                      <label>Location Type</label>
+                      <div className="flexbox">
+                        <RadioBox id="Radio14">food</RadioBox>
+                        <RadioBox id="Radio15">cookie</RadioBox>
+                        <RadioBox id="Radio16">cake</RadioBox>
+                      </div>
+                    </div>
+                    <div className="form-groups">
+                      <label>Location Qualities</label>
+                      <div className="flexbox">
+                        <CheckBox id="chbox13">food</CheckBox>
+                        <CheckBox id="chbox14">cookie</CheckBox>
+                        <CheckBox id="chbox15">cake</CheckBox>
+                      </div>
+                    </div>
+                    <div className="form-groups">
+                      <label>first Name</label>
+                      <NameInput />
+                    </div>
+                    <div className="form-groups">
+                      <label>last Name</label>
+                      <NameInput />
+                    </div>
+                    <div className="form-groups">
+                      <label>Street</label>
+                      <Street />
+                    </div>
+                    <div className="form-groups">
+                      <label>Suite</label>
+                      <Suite />
+                    </div>
+                    <div className="form-groups">
+                      <label>City</label>
+                      <City />
+                    </div>
+                    <div className="form-groups">
+                      <label>Suite</label>
+                      <StateInput />
+                    </div>
+                    <div className="form-groups">
+                      <label>ZIP Code</label>
+                      <ZipInput />
                     </div>
 
                     <SmmitBnt name="Smmit"></SmmitBnt>
@@ -328,13 +397,11 @@ export default function Validation() {
               </div>
             </div>
           </div>
-          {/* 왼쪽 프레임 */}
 
           {/* 아래 프레임 */}
           <div className="bottom-frame">
             <label>Tooltip Positioning</label>
-
-            <TooltipPositon></TooltipPositon>
+            <TooltipPositon />
           </div>
         </div>
       </div>

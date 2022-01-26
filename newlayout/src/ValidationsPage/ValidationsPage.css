@@ -85,3 +85,8 @@
   max-width: 100%;
   flex: 0 0 100%;
 }
+
+.form-groups > label {
+  display: block;
+  margin-bottom: 10px;
+}
