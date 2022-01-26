@@ -13,7 +13,13 @@ export const Slider = (props) => {
     return(
         <>
         <div className="oneslide">
-            <input type="range" id="myRange" name="slider" min={props.min} max={props.max} />
+            <input 
+                type="range" 
+                id="myRange" 
+                name="slider" 
+                min={props.min} 
+                max={props.max} 
+            />
             <span id="f"></span>
         </div>
         </>
