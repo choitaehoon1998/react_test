@@ -3,9 +3,11 @@
 
 
 .btn-color:hover {
+    transition: 0.2s;
     background-color: rgb(139, 9, 9);
 }
 .btn-color {
+    transition: 0.2s;
     background-color: rgb(185, 13, 13);
     color: #fff;
     cursor: pointer;

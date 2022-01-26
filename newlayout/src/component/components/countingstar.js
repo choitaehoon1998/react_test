@@ -30,7 +30,7 @@ export const CountingStar = () => {
                 return(
                     <FaStar 
                     key={idx} 
-                    size="30" 
+                    size="28" 
                     onClick={() => StarClick(el)} 
                     className={clicked[el] && 'redStar'} />
                 );
