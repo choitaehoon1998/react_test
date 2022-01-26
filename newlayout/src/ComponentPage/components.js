@@ -87,7 +87,7 @@ export default function Components() {
                     <div className="left-frame">
                         <div className="form-frame frame1">
                             <label>
-                                드랍존
+                               파일 드랍존
                             </label>
 
                             <div className="form-groups">
