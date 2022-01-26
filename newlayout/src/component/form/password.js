@@ -1,15 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 
-const PassWord = (props) => {
+function Password() {
+  const [password, setPassword] = useState("");
+
+  const handleChange = ({ target: { value } }) => setPassword(value);
+
   return (
-    <>
-      <div>
-        <input type="password" className="form-control">
-          {props.children}
-        </input>
-      </div>
-    </>
+    <input
+      type="password"
+      name="password"
+      value={password}
+      onChange={handleChange}
+      className="form-control"
+    />
   );
-};
-
-export default PassWord;
+}

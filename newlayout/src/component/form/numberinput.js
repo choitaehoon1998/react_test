@@ -1,15 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 
-const NumberInput = (props) => {
+function NumberInput() {
+  const [number, setNumber] = useState("");
+
+  const handleChange = ({ target: { value } }) => setNumber(value);
   return (
     <>
-      <div>
-        <input type="number" className="form-control" required>
-          {props.children}
-        </input>
-      </div>
+      <input
+        type="number"
+        name="number"
+        value={number}
+        onChange={handleChange}
+        className="form-control"
+      />
     </>
   );
-};
+}
 
 export default NumberInput;

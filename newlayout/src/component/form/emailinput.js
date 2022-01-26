@@ -1,15 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 
-const EmailInput = (props) => {
+function EmailInput() {
+  const [email, setEmail] = useState("");
+
+  const handleChange = ({ target: { value } }) => setEmail(value);
   return (
     <>
-      <div>
-        <input type="email" className="form-control">
-          {props.children}
-        </input>
-      </div>
+      <input
+        type="email"
+        name="email"
+        value={email}
+        onChange={handleChange}
+        className="form-control"
+      />
     </>
   );
-};
+}
 
 export default EmailInput;

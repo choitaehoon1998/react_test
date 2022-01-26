@@ -1,13 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 
-const NameInput = (props) => {
+function NameInput() {
+  const [name, setName] = useState("");
+
+  const handleChange = ({ target: { value } }) => setName(value);
   return (
     <>
-      <input type="text" className="form-control">
-        {props.children}
-      </input>
+      <input
+        type="text"
+        name="name"
+        value={name}
+        onChange={handleChange}
+        className="form-control"
+      />
     </>
   );
-};
+}
 
 export default NameInput;

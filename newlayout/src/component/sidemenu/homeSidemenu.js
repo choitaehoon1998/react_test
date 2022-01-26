@@ -43,7 +43,7 @@ export default function HOMESIDEMENU() {
       </div>
 
       <div className={side === 1 ? "gnb-sideMenu-ac" : "gnb-sideMenu"}>
-        <SideFrameTit name="기본설정" />
+        <SideFrameTit name="컴포넌트" />
         <div
           className={item1 === 1 ? "listname-active" : "listname"}
           onClick={() => {
@@ -54,12 +54,12 @@ export default function HOMESIDEMENU() {
             }
           }}
         >
-          기본정책
+          컴포넌트
         </div>
         <ul className={item1 === 1 ? "listGroup" : "listGroup-hidden"}>
           <li>
             <Link to="" className="sideMenuText">
-              기본 정보 설정
+              #
             </Link>
           </li>
           <li>
@@ -69,105 +69,27 @@ export default function HOMESIDEMENU() {
           </li>
           <li>
             <Link to="" className="sideMenuText">
-              이용/탈퇴 안내
+              #
             </Link>
           </li>
           <li>
             <Link to="" className="sideMenuText">
-              금액/단위 기준 설정
+              #
             </Link>
           </li>
           <li>
             <Link to="" className="sideMenuText">
-              파일 저장소 관리
+              #
             </Link>
           </li>
           <li>
             <Link to="" className="sideMenuText">
-              코드 관리
+              #
             </Link>
           </li>
           <li>
             <Link to="" className="sideMenuText">
-              외부 스크립트 관리
-            </Link>
-          </li>
-        </ul>
-        <div
-          className={item2 === 1 ? "listname-active" : "listname"}
-          onClick={() => {
-            if (item2 === 0) {
-              setItem2(1);
-            } else if (item2 === 1) {
-              setItem2(0);
-            }
-          }}
-        >
-          관리 정책
-        </div>
-        <ul className={item2 === 1 ? "listGroup" : "listGroup-hidden"}>
-          <li>
-            <Link to="" className="sideMenuText">
-              운영자 관리
-            </Link>
-          </li>
-          <li>
-            <Link to="" className="sideMenuText">
-              운영자 권한 설정
-            </Link>
-          </li>
-          <li>
-            <Link to="" className="sideMenuText">
-              운영 보안 설정
-            </Link>
-          </li>
-          <li>
-            <Link to="" className="sideMenuText">
-              쇼핑몰 이용 설정
-            </Link>
-          </li>
-          <li>
-            <Link to="" className="sideMenuText">
-              비밀번호 찾기 설정
-            </Link>
-          </li>
-          <li>
-            <Link to="" className="sideMenuText">
-              비밀번호 변경안내 설정
-            </Link>
-          </li>
-        </ul>
-        <div
-          className={item3 === 1 ? "listname-active" : "listname"}
-          onClick={() => {
-            if (item3 === 0) {
-              setItem3(1);
-            } else if (item3 === 1) {
-              setItem3(0);
-            }
-          }}
-        >
-          해외상점
-        </div>
-        <ul className={item3 === 1 ? "listGroup" : "listGroup-hidden"}>
-          <li>
-            <Link to="" className="sideMenuText">
-              상품 기본 설정
-            </Link>
-          </li>
-          <li>
-            <Link to="" className="sideMenuText">
-              상품 이미지 사이즈 설정
-            </Link>
-          </li>
-          <li>
-            <Link to="" className="sideMenuText">
-              상품 상세 이용안내 관리
-            </Link>
-          </li>
-          <li>
-            <Link to="" className="sideMenuText">
-              최근 본 상품 설정
+              #
             </Link>
           </li>
         </ul>
