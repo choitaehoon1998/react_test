@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import "react-dropzone-component/styles/filepicker.css";
+import "./compostyle.css"
 import "dropzone/dist/min/dropzone.min.css";
 
 import DropUploader from "./DropUploader";

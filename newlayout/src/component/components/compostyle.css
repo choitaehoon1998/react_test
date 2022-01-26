@@ -144,6 +144,7 @@ svg:hover ~ svg {
 .react-tagsinput {
     background-color: #fff;
     border: 1px solid rgb(139, 9, 9);
+    border-radius: 20px;
     overflow: hidden;
     padding-left: 5px;
     padding-top: 5px;
@@ -155,7 +156,7 @@ svg:hover ~ svg {
   
   .react-tagsinput-tag {
     background-color: rgb(139, 9, 9);
-    border-radius: 2px;
+    border-radius: 15px;
     border: 1px solid rgb(139, 9, 9);
     color: #fff;
     display: inline-block;
@@ -190,16 +191,79 @@ svg:hover ~ svg {
     width: 80px;
   }
 
+
   /* 드랍존 */
-  .dropzone{
-      border: 1px solid rgb(100, 100, 100);
-      width: 100%;
-      height: 100px;
-      text-align: center;
-  }
-  .dropzone:hover{
-      cursor: pointer;
-  }
-  .dropzone p{
-      padding-top: 40px;
-  }
+
+  /* Filepicker CSS */
+.filepicker {
+    font-family: sans-serif;
+}
+
+div.filepicker {
+    text-align: center;
+    padding: 5px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    min-height: 60px;
+    border: 2px dashed rgb(143, 143, 143);
+}
+
+/* 드랍존 아이콘 */
+.filepicker-file-icon
+{
+    position: relative;
+
+    display: inline-block;
+
+    margin: 1.5em 0 2.5em 0;
+    padding-left: 45px;
+
+    color: black;
+}
+.filepicker-file-icon::before
+{
+    position: absolute;
+    top: -7px;
+    left: 0;
+
+    width: 29px;
+    height: 34px;
+
+    content: '';
+
+    border: solid 2px rgb(139, 9, 9);
+    border-radius: 2px;
+}
+.filepicker-file-icon::after
+{
+    font-size: 11px;
+    line-height: 1.3;
+
+    position: absolute;
+    top: 9px;
+    left: -4px;
+
+    padding: 0 2px;
+
+    content: 'file';
+    content: attr(data-filetype);
+    text-align: right;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    color: #fff;
+    background-color: rgb(139, 9, 9);
+}
+.filepicker-file-icon .fileCorner
+{
+    position: absolute;
+    top: -7px;
+    left: 22px;
+
+    width: 0;
+    height: 0;
+
+    border-width: 11px 0 0 11px;
+    border-style: solid;
+    border-color: white transparent transparent #920035;
+}

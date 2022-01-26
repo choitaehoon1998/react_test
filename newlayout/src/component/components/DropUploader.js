@@ -15,8 +15,8 @@ const djsConfig = {
 class DropUploader extends React.Component {
   static propTypes = {
     initialMedia: PropTypes.array,
-    onUpload: PropTypes.function,
-    onRemove: PropTypes.function
+    onUpload: PropTypes.func,
+    onRemove: PropTypes.func
   };
 
   static defaultProps = {
