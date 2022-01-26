@@ -38,7 +38,31 @@ export default function Components() {
                         </div>
                     </div>
 
-                    
+                    <div className="left-frame">
+                        <div className="form-frame frame1">
+                            <label>
+                               파일 드랍존
+                            </label>
+
+                            <div className="form-groups">
+                                <DropZone></DropZone>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div className="left-frame">
+                        <div className="form-frame frame1">
+                            <label>
+                                태그
+                            </label>
+
+                            <div className="form-groups">
+                                <Tags></Tags>
+                            </div>
+
+                        </div>
+                    </div>
 
                     <div className="left-frame">
                         <div className="form-frame frame1">
@@ -84,31 +108,9 @@ export default function Components() {
                         </div>
                     </div>
 
-                    <div className="left-frame">
-                        <div className="form-frame frame1">
-                            <label>
-                               파일 드랍존
-                            </label>
+                    
 
-                            <div className="form-groups">
-                                <DropZone></DropZone>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <div className="left-frame">
-                        <div className="form-frame frame1">
-                            <label>
-                                태그
-                            </label>
-
-                            <div className="form-groups">
-                                <Tags></Tags>
-                            </div>
-
-                        </div>
-                    </div>
+                    
 
                 </div>
             </div>
