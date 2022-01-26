@@ -121,12 +121,13 @@
 .Stars  {
     display: flex;
     padding-top: 5px;
-
 }
+
 svg{
     color: rgb(175, 175, 175);
     cursor: pointer;
 }
+
 svg:hover ~ svg {
     color: rgb(175, 175, 175); 
 }

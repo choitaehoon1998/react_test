@@ -5,7 +5,7 @@ import DropzoneComponent from "react-dropzone-component";
 const componentConfig = {
   iconFiletypes: [".jpg", ".png", ".gif", ".mp3"],
   showFiletypeIcon: true,
-  postUrl: "https://honeysuckle-snowstorm.glitch.me/uploadHandler"
+  postUrl: "#"
 };
 
 const djsConfig = {
