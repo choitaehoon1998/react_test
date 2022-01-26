@@ -142,7 +142,7 @@ svg:hover ~ svg {
 
 /* 태그 추가 */
 .react-tagsinput {
-    background-color: #fff;
+    background-color: #fafafada;
     border: 1px solid rgb(139, 9, 9);
     border-radius: 20px;
     overflow: hidden;
