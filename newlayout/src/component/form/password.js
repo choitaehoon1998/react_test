@@ -1,10 +1,10 @@
 import React from "react";
 
-const EmailInput = (props) => {
+const PassWord = (props) => {
   return (
     <>
       <div>
-        <input type="email" className="form-control">
+        <input type="password" className="form-control">
           {props.children}
         </input>
       </div>
@@ -12,4 +12,4 @@ const EmailInput = (props) => {
   );
 };
 
-export default EmailInput;
+export default PassWord;

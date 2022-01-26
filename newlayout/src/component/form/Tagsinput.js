@@ -10,7 +10,7 @@ export default class Tagsinput extends React.Component {
     this.state = { tags: [] };
   }
 
-  handleChange = tags => {
+  handleChange = (tags) => {
     console.log(tags);
     this.setState({ tags });
   };
@@ -21,29 +21,16 @@ export default class Tagsinput extends React.Component {
       <Formik
         initialValues={this.state}
         onSubmit={this.onSubmit}
-        render={({
-          values,
-          errors,
-          touched,
-          status,
-          dirty,
-          handleChange,
-          handleBlur,
-          handleSubmit,
-          isSubmitting,
-          isValid,
-          handleReset,
-          setTouched,
-          setFieldValue,
-        }) => (
+        render={({ values, handleSubmit, setFieldValue }) => (
           <Form onSubmit={handleSubmit} noValidate name="simpleForm">
             <TagsInput
               name="tags"
               value={values.tags}
-              onChange={tags => {
+              onChange={(tags) => {
                 console.log(tags);
                 setFieldValue("tags", tags);
               }}
+              className="form-control"
             />
           </Form>
         )}

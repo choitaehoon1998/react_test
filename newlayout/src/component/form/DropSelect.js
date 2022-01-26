@@ -1,8 +1,9 @@
 import React, { useMemo } from "react";
 import Select from "react-select";
+
 //  npm i react-select 설치 필수
 
-function ReactSelectFix() {
+const DropSelect = (props) => {
   const options = useMemo(
     () => [
       { value: "apple", label: "Apple" },
@@ -17,6 +18,6 @@ function ReactSelectFix() {
       <Select options={options} />
     </div>
   );
-}
+};
 
-export default ReactSelectFix;
+export default DropSelect;

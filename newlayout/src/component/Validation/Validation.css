@@ -1,39 +1,4 @@
-@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
-
-.notosanskr * {
-  font-family: "Noto Sans KR", sans-serif;
-}
-
-/*                                   공용 form 스타일  */
-
-.card {
-  max-width: 100%;
-  flex: 0 0 100%;
-}
-.form-frame1 > .card > form > label {
-  font-weight: bold;
-}
-
-
-
 /*                       submit btn  */
-.btn-color:hover {
-  background-color: rgb(139, 9, 9);
-}
-.btn-color {
-  background-color: rgb(185, 13, 13);
-  color: #fff;
-  cursor: pointer;
-  outline: none;
-  border: none;
-}
-.btn {
-  border-radius: 50px;
-  outline: initial !important;
-  box-shadow: none !important;
-  font-size: 0.8rem;
-  padding: 0.5rem 1.75rem;
-}
 
 .feedBack {
   display: none;
@@ -261,68 +226,6 @@ input[id="Custom-radio4"] {
   display: inline-block;
   margin-right: 20px;
   width: 60px;
-}
-
-/*  스위치  */
-#switch {
-  display: none;
-}
-.label-position {
-  display: block;
-  margin-bottom: 15px;
-}
-
-.switch_label {
-  position: relative;
-  cursor: pointer;
-  display: inline-block;
-  width: 58px;
-  height: 28px;
-  background: #fff;
-  border: 2px solid rgb(185, 13, 13);
-  border-radius: 20px;
-  transition: 0.2s;
-}
-.switch_label:hover {
-  background: #efefef;
-}
-.onf_btn {
-  position: absolute;
-  top: 4px;
-  left: 3px;
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  border-radius: 20px;
-  background: rgb(185, 13, 13);
-  transition: 0.2s;
-}
-
-/* checking style */
-#switch:checked + .switch_label {
-  background: rgb(139, 9, 9);
-  border: 2px solid rgb(139, 9, 9);
-}
-
-#switch:checked + .switch_label:hover {
-  background: rgb(192, 14, 14);
-}
-
-/* move */
-#switch:checked + .switch_label .onf_btn {
-  left: 34px;
-  background: #fff;
-  box-shadow: 1px 2px 3px #00000020;
-}
-/* 데이커 */
-.react-datePicker-wrapper {
-  width: 100%;
-  margin-top: 20px;
-}
-.datepick {
-  width: 100% !important;
-  z-index: 10 !important;
-  height: 30px !important;
 }
 
 /*  TopLabels */

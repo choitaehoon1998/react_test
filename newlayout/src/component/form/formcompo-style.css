@@ -7,9 +7,7 @@
   height: 30px;
   line-height: 30px;
   background-color: #fff;
-  margin-top: 15px;
 }
-
 
 /* btn 스타일 */
 
@@ -31,10 +29,182 @@
   padding: 0.5rem 1.75rem;
 }
 
-
 /* textarea 사이즈  */
 .textsize {
-width: 100%;
-height: 50px;
-resize: vertical; 
+  width: 100%;
+  height: 50px;
+  resize: vertical;
+}
+
+/* Select 스타일 */
+.ReactSelectFix {
+  margin-top: 10px;
+}
+
+/* 체크박스 스타일  */
+
+.flexbox {
+  display: flex;
+}
+.checkposition {
+  margin-top: 12px;
+  line-height: 1;
+}
+
+.line {
+  position: relative;
+  height: 30px;
+}
+
+.label-font-second {
+  font-size: 12px;
+  font-weight: normal;
+  padding: 5px;
+}
+
+/* Switch 스타일 */
+
+#switch {
+  display: none;
+}
+.label-position {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.switch_label {
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  width: 58px;
+  height: 28px;
+  background: #fff;
+  border: 2px solid rgb(185, 13, 13);
+  border-radius: 20px;
+  transition: 0.2s;
+  margin-top: 10px;
+}
+.switch_label:hover {
+  background: #efefef;
+}
+.onf_btn {
+  position: absolute;
+  top: 4px;
+  left: 3px;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  background: rgb(185, 13, 13);
+  transition: 0.2s;
+}
+#switch:checked + .switch_label {
+  background: rgb(139, 9, 9);
+  border: 2px solid rgb(139, 9, 9);
+}
+
+#switch:checked + .switch_label:hover {
+  background: rgb(192, 14, 14);
+}
+#switch:checked + .switch_label .onf_btn {
+  left: 34px;
+  background: #fff;
+  box-shadow: 1px 2px 3px #00000020;
+}
+
+/* 데이커 스타일 */
+.react-datePicker-wrapper {
+  width: 100%;
+  margin-top: 20px;
+}
+.datepick {
+  width: 100% !important;
+  z-index: 10 !important;
+  height: 30px !important;
+  margin-top: 10px;
+}
+
+.react-datepicker__triangle {
+  transform: translate(220px, 0px) !important;
+}
+
+/*  */
+.has-float-label {
+  display: block;
+  position: relative;
+  margin-top: 0;
+}
+
+.has-float-label > span:last-of-type,
+.has-float-label label {
+  position: absolute;
+  cursor: text;
+  font-size: 80%;
+  opacity: 1;
+  top: -0.4em;
+  left: 0.75rem;
+  z-index: 1;
+  line-height: 1;
+  padding: 0 1px;
+}
+
+.has-float-label > span:after,
+.has-float-label label:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  height: 5px;
+  top: 3px;
+  left: -0.2em;
+  right: -0.2em;
+  z-index: -1;
+}
+
+.has-float-label > span:after,
+.has-float-label label:after {
+  background: #fff !important;
+}
+
+.has-float-label > span,
+.has-float-label label,
+.has-top-label > span,
+.has-top-label label {
+  color: rgba(58, 58, 58, 0.7);
+}
+
+.has-top-label {
+  display: block;
+  position: relative;
+}
+
+.has-top-label label:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  height: 2px;
+  top: 50%;
+  left: -0.2em;
+  right: -0.2em;
+  z-index: -1;
+}
+
+.has-top-label label {
+  position: absolute;
+  cursor: text;
+  font-size: 70%;
+  opacity: 1;
+  top: 0.7rem;
+  left: 0.75rem;
+  z-index: 1;
+  line-height: 1;
+  padding: 0 1px;
+  font-weight: 600;
+}
+
+.has-top-label .form-control {
+  min-height: calc(2.2rem + 2px) !important;
+}
+
+.has-top-label .form-control {
+  padding: 1.7rem 0rem 0.2rem 0.4rem !important;
 }
