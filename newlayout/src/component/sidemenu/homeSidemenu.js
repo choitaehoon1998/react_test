@@ -1,6 +1,5 @@
-import React from "react";
-import { useState } from "react";
-import { Link } from "react-router-dom";
+
+import React,{ useState } from "react";
 import SideMenuTitle from "./sidemenu/SideMenuName";
 import SideMenuList from "./sidemenu/SideMenuList";
 
@@ -42,17 +41,13 @@ const[item3, setItem3]=useState(0);
         }
       } }>컴포넌트</div>
       <ul className={item1 === 1 ? "listGroup" : "listGroup-hidden"}>
-        <SideMenuList link="/compage/Buttons" name="버튼"></SideMenuList>
+        <SideMenuList link="/Buttons" name="버튼"></SideMenuList>
+        <SideMenuList link="/home/modal" name="modal"></SideMenuList>
         <SideMenuList link="" name="#"></SideMenuList>
         <SideMenuList link="" name="#"></SideMenuList>
         <SideMenuList link="" name="#"></SideMenuList>
-        <SideMenuList link="" name="#"></SideMenuList>
-        <SideMenuList link="" name="#"></SideMenuList>
+        <SideMenuList link="/Components" name="컴포넌트"></SideMenuList>
       </ul>
-      
-      
-      
-      
     </div></>
     
   );

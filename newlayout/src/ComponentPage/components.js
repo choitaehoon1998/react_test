@@ -5,8 +5,10 @@ import { Switch, SmlSwitch } from "../component/components/switch";
 import { Slider } from "../component/components/slider";
 import CheckboxCoponent from "../component/components/checkbox";
 import { CountingStar } from "../component/components/countingstar";
-import { Tags } from "../component/components/tags";
+import Tags from "../component/components/tags";
 import {DropZone} from "../component/components/dropzone";
+import DatePickerComponent from "../component/components/dataPickerComponent";
+import DateRange from "../component/components/dateRange";
 
 export default function Components() {
     return( 
@@ -38,28 +40,35 @@ export default function Components() {
                         </div>
                     </div>
 
-                    
+                    <div className="left-frame">
+                        <div className="form-frame frame1">
+                            <label>
+                                Date Picker
+                            </label>
+                            
+                            <div className="form-groups">
+                            <p>Date with Time</p>
+                                <DatePickerComponent></DatePickerComponent>
+                            </div>
+
+                            <div className="form-groups">
+                            <p>Date Range</p>
+                                <DateRange></DateRange>
+                            </div>
+                               
+                        </div>
+                    </div>
+
 
                     <div className="left-frame">
                         <div className="form-frame frame1">
                             <label>
-                                스위치
+                               Dropzone
                             </label>
-                            <label>
-                                스위치
-                            </label>
-                            
 
                             <div className="form-groups">
-                                <p>기본 스위치</p>
-                                <Switch></Switch>
+                                <DropZone></DropZone>
                             </div>
-
-                            <div className="form-groups">
-                                <p>작은 스위치</p>
-                                <SmlSwitch></SmlSwitch>
-                            </div>
-
 
                         </div>
                     </div>
@@ -67,11 +76,42 @@ export default function Components() {
                     <div className="left-frame">
                         <div className="form-frame frame1">
                             <label>
-                                슬라이더
+
+                               Tags
+                            </label>
+
+                            <div className="form-groups">
+                                <Tags></Tags>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div className="left-frame">
+                        <div className="form-frame frame1">
+                            <label>
+
+                                Switch
+                            </label>
+                            <div className="form-groups">
+                                <p>Normal</p>
+                                <Switch></Switch>
+                            </div>
+
+                            <div className="form-groups">
+                                <p>Small</p>
+                                <SmlSwitch></SmlSwitch>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="left-frame">
+                        <div className="form-frame frame1">
+                            <label>
+                                Slider
                             </label>
                             
                             <div className="form-groups">
-                                <p>기본 슬라이더</p>
                                 <Slider  min="0" max="100"></Slider>
                             </div>
 
@@ -81,7 +121,7 @@ export default function Components() {
                     <div className="left-frame">
                         <div className="form-frame frame1">
                             <label>
-                                별점
+                                Rating
                             </label>
 
                             <div className="form-groups">
@@ -91,18 +131,11 @@ export default function Components() {
                         </div>
                     </div>
 
-                    <div className="left-frame">
-                        <div className="form-frame frame1">
-                            <label>
-                                드랍존
-                            </label>
 
-                            <div className="form-groups">
-                                <DropZone></DropZone>
-                            </div>
+                    
 
-                        </div>
-                    </div>
+                    
+
                 </div>
             </div>
         </div>
