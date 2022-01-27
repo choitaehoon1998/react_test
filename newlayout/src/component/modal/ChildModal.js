@@ -32,16 +32,49 @@ const ChildModal = ({openModal,onChildSubmit,onChildCancel}) => {
         }
     }
 
-    return(
+    return (
         <>
-        <ReactModal isOpen={openModal} style={modalStyle}>
-        <button id="save" onClick={handleClickSubmit}>저장</button>
-            <button id="modify" onClick={handleClickSubmit}>수정</button>
-            <button id="remove" onClick={handleClickSubmit}>삭제</button>
-            <button id="cancel" onClick={handleClickCancel}>취소</button>
-            <div>하위 모달입니다</div>
+            <ReactModal isOpen={openModal} style={modalStyle}>
+            <div>
+            <div className = "modalHeader">
+                <div className = "modalTitle">
+                    <h1>Nested Modal</h1>
+                </div>
+                    <div className = "modalButton">
+                    <button
+                        className="btn btn-color"
+                        id="save"
+                        onClick={handleClickSubmit}
+                    >
+                        저장
+                    </button>
+                    <button
+                        className="btn btn-color"
+                        id="modify"
+                        onClick={handleClickSubmit}
+                    >
+                        수정
+                    </button>
+                    <button
+                        className="btn btn-color"
+                        id="remove"
+                        onClick={handleClickSubmit}
+                    >
+                        삭제
+                    </button>
+                    <button
+                        className="btn btn-color"
+                        id="cancel"
+                        onClick={handleClickCancel}
+                    >
+                        취소
+                    </button>
+                </div>
+                    </div>
+                    </div>
+                <div>하위 모달입니다</div>
         </ReactModal>
-        </>
+      </>
     );
 }
 

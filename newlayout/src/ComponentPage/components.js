@@ -12,6 +12,10 @@ import DateRange from "../component/components/dateRange";
 import EmbeddedPicker from "../component/components/embeddedpicker";
 import NomalDatepicker from "../component/components/nomaldatepicker";
 import RadioBox from "../component/form/radiobox";
+import { Tags } from "../component/components/tags";
+import {DropZone} from "../component/components/dropzone";
+import AutosuggestComponent from "../component/components/autosuggestComponent";
+import DatePickerComponent from "../component/components/datePickerComponent";
 
 export default function Components() {
   return (
@@ -54,6 +58,36 @@ export default function Components() {
                   <p>Date with Time</p>
                   <DatePickerComponent></DatePickerComponent>
                 </div>
+
+
+                    <div className="left-frame">
+                        <div className="form-frame frame1">
+                            <label>
+                                Custom Autosuggest
+                            </label>
+                            <div className="form-groups">
+                                <AutosuggestComponent></AutosuggestComponent>
+                            </div>
+                        
+
+                        </div>
+                    </div>
+
+                    <div className="left-frame">
+                        <div className="form-frame frame1">
+                            <label>
+                                Date Picker
+                            </label>
+                            <span>Date with Time</span>
+                            <div className="form-groups">
+                                <DatePickerComponent></DatePickerComponent>
+                            </div>
+                        
+
+                        </div>
+                    </div>
+
+                    
 
                 <div className="form-groups">
                   <p>Date Range</p>
