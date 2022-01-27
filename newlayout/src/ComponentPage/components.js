@@ -63,7 +63,7 @@ export default function Components() {
                     <div className="left-frame">
                         <div className="form-frame frame1">
                             <label>
-                               파일 드랍존
+                               Dropzone
                             </label>
 
                             <div className="form-groups">
@@ -76,7 +76,7 @@ export default function Components() {
                     <div className="left-frame">
                         <div className="form-frame frame1">
                             <label>
-                                태그
+                               Tags
                             </label>
 
                             <div className="form-groups">
@@ -89,15 +89,15 @@ export default function Components() {
                     <div className="left-frame">
                         <div className="form-frame frame1">
                             <label>
-                                스위치
+                                Switch
                             </label>
                             <div className="form-groups">
-                                <p>기본 스위치</p>
+                                <p>Normal</p>
                                 <Switch></Switch>
                             </div>
 
                             <div className="form-groups">
-                                <p>작은 스위치</p>
+                                <p>Small</p>
                                 <SmlSwitch></SmlSwitch>
                             </div>
                         </div>
@@ -106,11 +106,10 @@ export default function Components() {
                     <div className="left-frame">
                         <div className="form-frame frame1">
                             <label>
-                                슬라이더
+                                Slider
                             </label>
                             
                             <div className="form-groups">
-                                <p>기본 슬라이더</p>
                                 <Slider  min="0" max="100"></Slider>
                             </div>
 
@@ -120,7 +119,7 @@ export default function Components() {
                     <div className="left-frame">
                         <div className="form-frame frame1">
                             <label>
-                                별점
+                                Rating
                             </label>
 
                             <div className="form-groups">
