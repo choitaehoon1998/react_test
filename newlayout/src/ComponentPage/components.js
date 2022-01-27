@@ -56,18 +56,14 @@ export default function Components() {
             <div className="left-frame">
               <div className="form-frame frame1">
                 <label>Date Picker</label>
+
                 <div className="form-groups">
                   <p>Date</p>
                   <NomalDatepicker></NomalDatepicker>
                 </div>
+
                 <div className="form-groups">
                   <p>Date with Time</p>
-                  <DatePickerComponent></DatePickerComponent>
-                </div>
-
-                <label>Date Picker</label>
-                <span>Date with Time</span>
-                <div className="form-groups">
                   <DatePickerComponent></DatePickerComponent>
                 </div>
 
@@ -75,6 +71,7 @@ export default function Components() {
                   <p>Date Range</p>
                   <DateRange></DateRange>
                 </div>
+
                 <div className="form-groups">
                   <p>Embeddedpicker</p>
                   <EmbeddedPicker></EmbeddedPicker>
