@@ -9,10 +9,6 @@
   z-index: 10 !important;
 }
 
-.react-datepicker {
-  border: none !important;
-}
-
 .react-datepicker__time-container
   .react-datepicker__time
   .react-datepicker__time-box
