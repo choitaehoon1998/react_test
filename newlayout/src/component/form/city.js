@@ -9,7 +9,7 @@ function City() {
       name="city"
       value={city}
       onChange={handleChange}
-      className="form-control"
+      className="form-control1"
     />
   );
 }

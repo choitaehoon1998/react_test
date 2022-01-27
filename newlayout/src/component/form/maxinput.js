@@ -11,7 +11,7 @@ function MaxInput() {
       name="max"
       value={max}
       onChange={handleChange}
-      className="form-control"
+      className="form-control1"
       required
     />
   );

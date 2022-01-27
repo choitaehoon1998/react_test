@@ -11,7 +11,7 @@ function Suite() {
       name="suite"
       value={suite}
       onChange={handleChange}
-      className="form-control"
+      className="form-control1"
       required
     />
   );

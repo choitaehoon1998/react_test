@@ -14,7 +14,7 @@ export default function LabelRightHelpers() {
               <label className="lable-font">error-l-0</label>
               <input
                 name="error-l-0"
-                className="form-control"
+                className="form-control1"
                 onClick={() => {
                   setLabelPosition(1);
                 }}
@@ -32,7 +32,7 @@ export default function LabelRightHelpers() {
               <label className="lable-font">error-l-50</label>
               <input
                 name="error-l-50"
-                className="form-control"
+                className="form-control1"
                 onClick={() => {
                   setLabelPosition(2);
                 }}
@@ -50,7 +50,7 @@ export default function LabelRightHelpers() {
               <label className="lable-font">error-l-100</label>
               <input
                 name="error-l-100"
-                className="form-control"
+                className="form-control1"
                 onClick={() => {
                   setLabelPosition(3);
                 }}
@@ -68,7 +68,7 @@ export default function LabelRightHelpers() {
               <label className="lable-font">error-l-150</label>
               <input
                 name="error-l-150"
-                className="form-control"
+                className="form-control1"
                 onClick={() => {
                   setLabelPosition(4);
                 }}
@@ -86,7 +86,7 @@ export default function LabelRightHelpers() {
               <label className="lable-font">error-l-200</label>
               <input
                 name="error-l-200"
-                className="form-control"
+                className="form-control1"
                 onClick={() => {
                   setLabelPosition(5);
                 }}
@@ -105,7 +105,7 @@ export default function LabelRightHelpers() {
               <input
                 name="error-l-
                 250"
-                className="form-control"
+                className="form-control1"
                 onClick={() => {
                   setLabelPosition(6);
                 }}
@@ -125,7 +125,7 @@ export default function LabelRightHelpers() {
               <label className="lable-font">error-l-25</label>
               <input
                 name="error-l-25"
-                className="form-control"
+                className="form-control1"
                 onClick={() => {
                   setLabelPosition(7);
                 }}
@@ -143,7 +143,7 @@ export default function LabelRightHelpers() {
               <label className="lable-font">error-l-75</label>
               <input
                 name="error-l-75"
-                className="form-control"
+                className="form-control1"
                 onClick={() => {
                   setLabelPosition(8);
                 }}
@@ -161,7 +161,7 @@ export default function LabelRightHelpers() {
               <label className="lable-font">error-l-125</label>
               <input
                 name="error-l-125"
-                className="form-control"
+                className="form-control1"
                 onClick={() => {
                   setLabelPosition(9);
                 }}
@@ -179,7 +179,7 @@ export default function LabelRightHelpers() {
               <label className="lable-font">error-l-175</label>
               <input
                 name="error-l-175"
-                className="form-control"
+                className="form-control1"
                 onClick={() => {
                   setLabelPosition(10);
                 }}
@@ -199,7 +199,7 @@ export default function LabelRightHelpers() {
               <label className="lable-font">error-l-225</label>
               <input
                 name="error-l-225"
-                className="form-control"
+                className="form-control1"
                 onClick={() => {
                   setLabelPosition(11);
                 }}
@@ -219,7 +219,7 @@ export default function LabelRightHelpers() {
               <label className="lable-font">error-l-275</label>
               <input
                 name="error-l-275"
-                className="form-control"
+                className="form-control1"
                 onClick={() => {
                   setLabelPosition(12);
                 }}

@@ -11,7 +11,7 @@ function EmailInput() {
         name="email"
         value={email}
         onChange={handleChange}
-        className="form-control"
+        className="form-control1"
       />
     </>
   );

@@ -30,7 +30,7 @@ export default class Tagsinput extends React.Component {
                 console.log(tags);
                 setFieldValue("tags", tags);
               }}
-              className="form-control"
+              className="form-control1"
             />
           </Form>
         )}

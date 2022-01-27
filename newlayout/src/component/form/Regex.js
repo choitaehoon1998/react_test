@@ -11,7 +11,7 @@ function Regex() {
       name="regex"
       value={regex}
       onChange={handleChange}
-      className="form-control"
+      className="form-control1"
       required
     />
   );

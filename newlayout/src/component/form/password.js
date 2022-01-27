@@ -11,7 +11,7 @@ function Password() {
       name="password"
       value={password}
       onChange={handleChange}
-      className="form-control"
+      className="form-control1"
     />
   );
 }

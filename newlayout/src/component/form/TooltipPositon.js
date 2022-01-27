@@ -16,7 +16,7 @@ export default function ToolTipPosition() {
               <label className="lable-font">Label Right</label>
               <input
                 name="email"
-                className="form-control"
+                className="form-control1"
                 onClick={() => {
                   setToolTip(1);
                 }}
@@ -30,7 +30,7 @@ export default function ToolTipPosition() {
               <label className="lable-font">Top Center</label>
               <input
                 name="email"
-                className="form-control"
+                className="form-control1"
                 onClick={() => {
                   setToolTip(2);
                 }}
@@ -46,7 +46,7 @@ export default function ToolTipPosition() {
               <label className="lable-font">Bottom Center</label>
               <input
                 name="email"
-                className="form-control"
+                className="form-control1"
                 onClick={() => {
                   setToolTip(3);
                 }}
@@ -62,7 +62,7 @@ export default function ToolTipPosition() {
               <label className="lable-font">Top Left</label>
               <input
                 name="email"
-                className="form-control"
+                className="form-control1"
                 onClick={() => {
                   setToolTip(4);
                 }}
@@ -78,7 +78,7 @@ export default function ToolTipPosition() {
               <label className="lable-font">Top Right</label>
               <input
                 name="email"
-                className="form-control"
+                className="form-control1"
                 onClick={() => {
                   setToolTip(5);
                 }}
@@ -94,7 +94,7 @@ export default function ToolTipPosition() {
               <label className="lable-font">Bottom Left</label>
               <input
                 name="email"
-                className="form-control"
+                className="form-control1"
                 onClick={() => {
                   setToolTip(6);
                 }}
@@ -110,7 +110,7 @@ export default function ToolTipPosition() {
               <label className="lable-font">Bottom Right</label>
               <input
                 name="email"
-                className="form-control"
+                className="form-control1"
                 onClick={() => {
                   setToolTip(7);
                 }}
