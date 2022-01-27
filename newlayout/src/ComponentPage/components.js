@@ -11,6 +11,7 @@ import DatePickerComponent from "../component/components/dataPickerComponent";
 import DateRange from "../component/components/dateRange";
 import EmbeddedPicker from "../component/components/embeddedpicker";
 import NomalDatepicker from "../component/components/nomaldatepicker";
+import RadioBox from "../component/form/radiobox";
 
 export default function Components() {
   return (
@@ -34,7 +35,11 @@ export default function Components() {
                 </div>
 
                 <label>Custom Radios</label>
-                <div className="form-groups"></div>
+                <div className="form-groups">
+                  <RadioBox>cookie</RadioBox>
+                  <RadioBox>cookie</RadioBox>
+                  <RadioBox>cookie</RadioBox>
+                </div>
               </div>
             </div>
 
