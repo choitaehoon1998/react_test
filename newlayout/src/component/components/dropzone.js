@@ -1,24 +1,20 @@
 import React from "react";
-import { useDropzone } from "react-dropzone";
+import ReactDOM from "react-dom";
+import "./compostyle.css"
+import "dropzone/dist/min/dropzone.min.css";
 
-export const DropZone = ({ onDrop, accept }) => {
-  const { getRootProps, getInputProps, isDragActive } = useDropzone({
-    onDrop,
-    accept
-  });
+import DropUploader from "./DropUploader";
 
+export function DropZone() {
   return (
-    <div className="dropzone" {...getRootProps()}>
-      <input className="dropzone-input" {...getInputProps()} />
-      <div className="text-center">
-        {isDragActive ? (
-          <p className="dropzone-content">Release to drop the files here</p>
-        ) : (
-          <p className="dropzone-content">
-            Drag 'n' drop some files here, or click to select files
-          </p>
-        )}
-      </div>
+    <div className="App">
+      <DropUploader
+        onUpload={(file) => console.log(file)}
+        onRemove={(file) => console.log(file)}
+      />
     </div>
   );
-};
+}
+
+const rootElement = document.getElementById("root");
+ReactDOM.render(<DropZone />, rootElement);

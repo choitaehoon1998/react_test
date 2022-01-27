@@ -15,4 +15,5 @@ export default function Context({children}) {
 
 export function useResultContext() {
     return useContext(ResultContext);
+
 }

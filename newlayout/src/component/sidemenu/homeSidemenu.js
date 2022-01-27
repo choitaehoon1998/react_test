@@ -1,7 +1,8 @@
-import React from "react";
-import { useState } from "react";
 import { Link } from "react-router-dom";
 import SideFrameTit from "./Sideframe/SideFrameTit";
+import React, { useState } from "react";
+import SideMenuTitle from "./sidemenu/SideMenuName";
+import SideMenuList from "./sidemenu/SideMenuList";
 
 export default function HOMESIDEMENU() {
   const [side, setSide] = useState(0);
@@ -43,7 +44,8 @@ export default function HOMESIDEMENU() {
       </div>
 
       <div className={side === 1 ? "gnb-sideMenu-ac" : "gnb-sideMenu"}>
-        <SideFrameTit name="컴포넌트" />
+        <SideMenuTitle title="기본설정"></SideMenuTitle>
+
         <div
           className={item1 === 1 ? "listname-active" : "listname"}
           onClick={() => {
@@ -57,41 +59,12 @@ export default function HOMESIDEMENU() {
           컴포넌트
         </div>
         <ul className={item1 === 1 ? "listGroup" : "listGroup-hidden"}>
-          <li>
-            <Link to="" className="sideMenuText">
-              #
-            </Link>
-          </li>
-          <li>
-            <Link to="./Validation" className="sideMenuText">
-              Validations
-            </Link>
-          </li>
-          <li>
-            <Link to="" className="sideMenuText">
-              #
-            </Link>
-          </li>
-          <li>
-            <Link to="" className="sideMenuText">
-              #
-            </Link>
-          </li>
-          <li>
-            <Link to="" className="sideMenuText">
-              #
-            </Link>
-          </li>
-          <li>
-            <Link to="" className="sideMenuText">
-              #
-            </Link>
-          </li>
-          <li>
-            <Link to="" className="sideMenuText">
-              #
-            </Link>
-          </li>
+          <SideMenuList link="/Buttons" name="버튼"></SideMenuList>
+          <SideMenuList link="/home/modal" name="modal"></SideMenuList>
+          <SideMenuList link="/" name="#"></SideMenuList>
+          <SideMenuList link="" name="#"></SideMenuList>
+          <SideMenuList link="" name="#"></SideMenuList>
+          <SideMenuList link="/Components" name="컴포넌트"></SideMenuList>
         </ul>
       </div>
     </>

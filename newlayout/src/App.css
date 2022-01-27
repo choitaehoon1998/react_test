@@ -326,3 +326,78 @@
   border-top: 1px solid rgb(197, 197, 197);
   transform: rotate(45deg);
 }
+
+.content-body > div {
+  margin: 30px;
+}
+
+.modalHeader {
+  display: flex;
+  border-bottom: 1px solid #000;
+}
+
+.modalTitle {
+  align-self: center;
+  font-size: 20px;
+  width: 50%;
+  margin: 5px;
+}
+
+.modalButton {
+  display: flex;
+  justify-content: flex-end;
+  width: 50%;
+}
+
+.modalButton > button {
+  margin: 5px;
+}
+
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  position: relative;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  outline: none !important;
+  border: 1px solid #eeeeee;
+  border-radius: 5px;
+  background: #fbfbfb;
+}
+
+input[type="checkbox"]::before {
+  content: "\2713";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  overflow: hidden;
+  transform: scale(0) translate(-50%, -50%);
+  line-height: 1;
+}
+
+input[type="checkbox"]:hover {
+  border-color: rgba(170, 170, 170, 0.5);
+}
+
+input[type="checkbox"]:checked {
+  background-color: rgb(185, 13, 13);
+  border-color: rgba(255, 255, 255, 0.3);
+  color: white;
+}
+
+input[type="checkbox"]:checked::before {
+  border-radius: 2px;
+  transform: scale(1) translate(-50%, -50%);
+}
+
+.checkboxLabel {
+  position: absolute;
+  margin-left: 5px;
+  line-height: 20px;
+}
+
+input[type="checkbox"]:disabled {
+  background-color: rgba(58, 58, 58, 0.25) !important;
+  border-color: rgba(255, 255, 255, 0.3);
+  color: white;
+}
