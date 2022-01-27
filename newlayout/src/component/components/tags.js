@@ -1,47 +1,46 @@
-// import React,{useCallback, useState} from "react";
-// import "./compostyle.css";
+import React from "react";
+import ReactDOM from "react-dom";
+import TagsInput from "react-tagsinput";
+import "./compostyle.css";
+import { Formik, Form, Field, ErrorMessage } from "formik";
 
-// export const Tags = () => {
-//     const [tag, setTag] = useState<string | ''>('')
-//     const [tagArr, setTagArr] = useState<string[0] | []>([])
+export default class App extends React.Component {
+  constructor() {
+    super();
+    this.state = { tags: [] };
+  }
 
-//     const onKeyup = useCallback(
-//         (e) =>{
-//             if(process.brower){
-//                 const $HashWrapOuter = document.querySelector('.HashWrapOuter')
-//                 const $HashWrapInner = document.createElement('div')
-//                 $HashWrapInner.className = 'HashWrapInner'
+  handleChange = (tags) => {
+    console.log(tags);
+    this.setState({ tags });
+  };
 
-//                 $HashWrapInner.addEventListener('click', ()=>{
-//                     $HashWrapOuter?.removeChild($HashWrapInner)
-//                     console.log($HashWrapInner.innerHTML)
-//                     setTagArr(tagArr.filter((tag) => tag))
-//                 })
+  render() {
+    console.log(this.state);
+    return (
+      <Formik
+        initialValues={this.state}
+        onSubmit={this.onSubmit}
+        render={({
+          values,
+          handleSubmit,
+          setFieldValue,
+        }) => (
+          <Form onSubmit={handleSubmit} noValidate name="simpleForm">
+            <TagsInput
+              name="tags"
+              value={values.tags}
+              onChange={(tags) => {
+                console.log(tags);
+                setFieldValue("tags", tags);
+              }}
+            />
+          </Form>
+        )}
+      />
+    );
+  }
+}
 
-//                 if (e.keyCode === 13 && e.target.value.trim() !== ''){
-//                     console.log('Enter Key 입력됨', e.target.value)
-//                     $HashWrapInner.innerHTML = '#' + e.target.value
-//                     $HashWrapOuter?.appendChild($HashWrapInner)
-//                     setTagArr((tagArr) => [...tagArr, tagArr])
-//                     setTag('')
-//                 }
-//             }
-//         },
-//         [tag, tagArr]
-//     )
-//     return(
-//         <div className="hashDivrap">
-//         <div className="tagWrap" >
-//             <div className="HashWrapOuter"></div>
-//                 <input
-//                 className="HashInput"
-//                 type="text"
-//                 value={hashtag}
-//                 onchange={onChangeHashtag}
-//                 onKeyUp={onKeyup}
-//                 placeholder="입력"
-//                 />
-//             </div>
-//         </div>
-//     );
-// }
+const rootElement = document.getElementById("root");
+ReactDOM.render(<App />, rootElement);

@@ -1,0 +1,110 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+.notosanskr * {
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+/* basic */
+/* checkbox */
+.group-basic {
+  position: relative;
+}
+.ckbox-block {
+  display: block;
+}
+
+/* Select style */
+.css-1s2u09g-control {
+  width: 100% !important;
+}
+
+/*  Tagsinput style */
+
+.react-tagsinput {
+  padding: 1.7rem 0rem 0.2rem 0.4rem !important;
+  width: 100% !important;
+}
+*/
+
+/* Tooltip */
+.col2 {
+  top: 0px;
+  left: 45%;
+}
+.col3 {
+  left: 45%;
+  top: 40px;
+}
+
+.col4 {
+  top: -5px;
+  left: 0;
+}
+
+.col5 {
+  top: -5px;
+  left: 90%;
+}
+.col6 {
+  top: 40px;
+  left: 0;
+}
+.col7 {
+  top: 40px;
+  left: 90%;
+}
+
+/* Label Right Position Helpers */
+.cardflex {
+  margin-top: 50px;
+}
+.cardflex > form > label {
+  display: block;
+  margin-bottom: 30px;
+}
+.left-error-frame {
+  width: 48%;
+  display: inline-block;
+  margin-right: 50px;
+}
+.right-error-frame {
+  display: inline-block;
+  width: 48%;
+}
+
+.error-l-0 {
+  left: 0;
+}
+.error-l-50 {
+  left: 10%;
+}
+.error-l-100 {
+  left: 20%;
+}
+.error-l-150 {
+  left: 40%;
+}
+.error-l-200 {
+  left: 60%;
+}
+.error-l-250 {
+  left: 85%;
+}
+.error-l-25 {
+  left: 4%;
+}
+.error-l-75 {
+  left: 14%;
+}
+.error-l-125 {
+  left: 34%;
+}
+.error-l-175 {
+  left: 54%;
+}
+.error-l-225 {
+  left: 70%;
+}
+.error-l-275 {
+  left: 88%;
+}

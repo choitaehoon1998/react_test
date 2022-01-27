@@ -2,10 +2,13 @@
 .mgside-5   {margin: 0 5px 0 5px;}
 
 
+/* 버튼 색상 */
 .btn-color:hover {
+    transition: 0.2s;
     background-color: rgb(139, 9, 9);
 }
 .btn-color {
+    transition: 0.2s;
     background-color: rgb(185, 13, 13);
     color: #fff;
     cursor: pointer;
@@ -17,6 +20,7 @@
 }
 
 
+/* 기본 크기 버튼 */
 .btn{
     border-radius: 50px;
     outline: initial !important;
@@ -28,6 +32,7 @@
 }
 
 
+/* 큰 크기 버튼 */
 .btn-big{
     border-radius: 50px;
     outline: initial !important;
@@ -38,7 +43,7 @@
     height: 44px;
 }
 
-
+/* 작은 크기 버튼 */
 .btn-small{
     border-radius: 50px;
     outline: initial !important;
@@ -50,7 +55,7 @@
 
 }
 
-
+/* 기본 크기 링크 버튼 */
 .btn-link{
     text-decoration: underline;
     border-radius: 50px;
@@ -62,7 +67,7 @@
     height: 31px;
 }
 
-
+/* 비활성화 버튼 */
 .btn-miss{
     border-radius: 50px;
     outline: initial !important;
@@ -76,8 +81,8 @@
     cursor: not-allowed;
 }
 
-
-.btn-radius-left{
+/* 그룹 버튼 */
+.btn-radius-left{/* 왼쪽 */
     border-right: 1px solid rgb(139, 9, 9);
     border-top-left-radius: 50px;
     border-bottom-left-radius: 50px;
@@ -88,7 +93,16 @@
     width: max-content;
     height: 31px;
 }
-.btn-radius-right{
+.btn-radius-mid{/* 가운데 */
+    border-right: 1px solid rgb(139, 9, 9);
+    outline: initial !important;
+    box-shadow: none !important;
+    font-size: 0.8rem;
+    padding: 0.2rem 1.4rem;
+    width: max-content;
+    height: 31px;
+}
+.btn-radius-right{/* 오른쪽 */
     border-top-right-radius: 50px;
     border-bottom-right-radius: 50px;
     outline: initial !important;
@@ -98,12 +112,4 @@
     width: max-content;
     height: 31px;
 }
-.btn-radius-none{
-    border-right: 1px solid rgb(139, 9, 9);
-    outline: initial !important;
-    box-shadow: none !important;
-    font-size: 0.8rem;
-    padding: 0.2rem 1.4rem;
-    width: max-content;
-    height: 31px;
-}
+

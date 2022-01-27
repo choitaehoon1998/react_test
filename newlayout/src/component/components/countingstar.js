@@ -24,14 +24,15 @@ export const CountingStar = () => {
         let score = clicked.filter(Boolean).length;
     };
     console.log(clicked);
+    
     return(
         <div className="Stars">
             {ARRAY.map((el,idx) => {
                 return(
                     <FaStar 
                     key={idx} 
-                    size="30" 
-                    onClick={() => StarClick(el)} 
+                    size="28" 
+                    onClick={() => StarClick(el)}
                     className={clicked[el] && 'redStar'} />
                 );
             })}

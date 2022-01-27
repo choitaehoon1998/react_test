@@ -1,0 +1,358 @@
+/*  form 스타일 */
+
+.form-control1 {
+  width: 100%;
+  border-radius: 2px;
+  border: 1px solid rgb(173, 170, 170);
+  height: 30px;
+  line-height: 30px;
+  background-color: #fff;
+}
+
+/* btn 스타일 */
+
+.btn-color:hover {
+  background-color: rgb(139, 9, 9);
+}
+.btn-color {
+  background-color: rgb(185, 13, 13);
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+.btn {
+  border-radius: 50px;
+  outline: initial !important;
+  box-shadow: none !important;
+  font-size: 0.8rem;
+  padding: 0.5rem 1.75rem;
+}
+
+/* textarea 사이즈  */
+.textsize {
+  width: 100%;
+  height: 50px;
+  resize: vertical;
+}
+
+/* Select 스타일 */
+.ReactSelectFix {
+  margin-top: 10px;
+}
+
+/* 체크박스 스타일  */
+
+.flexbox {
+  display: flex;
+}
+.checkposition {
+  margin-top: 12px;
+  line-height: 1;
+}
+
+.line {
+  position: relative;
+  height: 30px;
+}
+
+.label-font-second {
+  font-size: 12px;
+  font-weight: normal;
+  padding: 5px;
+}
+
+
+/* 데이커 스타일 */
+.react-datePicker-wrapper {
+  width: 100%;
+  margin-top: 20px;
+}
+.datepick {
+  width: 100% !important;
+  z-index: 10 !important;
+  height: 30px !important;
+  margin-top: 10px;
+}
+
+.react-datepicker__triangle {
+  transform: translate(220px, 0px) !important;
+}
+
+/*  */
+.has-float-label {
+  display: block;
+  position: relative;
+  margin-top: 0;
+}
+
+.has-float-label > span:last-of-type,
+.has-float-label label {
+  position: absolute;
+  cursor: text;
+  font-size: 80%;
+  opacity: 1;
+  top: -0.4em;
+  left: 0.75rem;
+  z-index: 1;
+  line-height: 1;
+  padding: 0 1px;
+}
+
+.has-float-label > span:after,
+.has-float-label label:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  height: 5px;
+  top: 3px;
+  left: -0.2em;
+  right: -0.2em;
+  z-index: -1;
+}
+
+.has-float-label > span:after,
+.has-float-label label:after {
+  background: #fff !important;
+}
+
+.has-float-label > span,
+.has-float-label label,
+.has-top-label > span,
+.has-top-label label {
+  color: rgba(58, 58, 58, 0.7);
+}
+
+.has-top-label {
+  display: block;
+  position: relative;
+}
+
+.has-top-label label:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  height: 2px;
+  top: 50%;
+  left: -0.2em;
+  right: -0.2em;
+  z-index: -1;
+}
+
+.has-top-label label {
+  position: absolute;
+  cursor: text;
+  font-size: 70%;
+  opacity: 1;
+  top: 0.7rem;
+  left: 0.75rem;
+  z-index: 1;
+  line-height: 1;
+  padding: 0 1px;
+  font-weight: 600;
+}
+
+.has-top-label .form-control {
+  min-height: calc(2.2rem + 2px) !important;
+}
+
+.has-top-label .form-control {
+  padding: 1.7rem 0rem 0.2rem 0.4rem !important;
+}
+
+
+*/
+
+/* Tooltip */
+.col2 {
+  top: 0px;
+  left: 45%;
+}
+.col3 {
+  left: 45%;
+  top: 40px;
+}
+
+.col4 {
+  top: -5px;
+  left: 0;
+}
+
+.col5 {
+  top: -5px;
+  left: 90%;
+}
+.col6 {
+  top: 40px;
+  left: 0;
+}
+.col7 {
+  top: 40px;
+  left: 90%;
+}
+
+/* Label Right Position Helpers */
+.cardflex {
+  margin-top: 50px;
+}
+.cardflex > form > label {
+  display: block;
+  margin-bottom: 30px;
+}
+.left-error-frame {
+  width: 48%;
+  display: inline-block;
+  margin-right: 50px;
+}
+.right-error-frame {
+  display: inline-block;
+  width: 48%;
+}
+
+.error-l-0 {
+  left: 0;
+}
+.error-l-50 {
+  left: 10%;
+}
+.error-l-100 {
+  left: 20%;
+}
+.error-l-150 {
+  left: 40%;
+}
+.error-l-200 {
+  left: 60%;
+}
+.error-l-250 {
+  left: 85%;
+}
+.error-l-25 {
+  left: 4%;
+}
+.error-l-75 {
+  left: 14%;
+}
+.error-l-125 {
+  left: 34%;
+}
+.error-l-175 {
+  left: 54%;
+}
+.error-l-225 {
+  left: 70%;
+}
+.error-l-275 {
+  left: 88%;
+}
+
+/* feedBack 동작 */
+.feedBack {
+  display: none;
+}
+.feedBackOpen {
+  display: block;
+  position: absolute;
+  top: -8px;
+  left: 50px;
+  border: 2px solid rgb(139, 9, 9);
+  width: 12.5em;
+  font-size: 12px;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  text-align: center;
+  border-radius: 5px;
+  background-color: #fff;
+  z-index: 10;
+}
+.feedBackActive {
+  display: block;
+  position: absolute;
+  top: -8px;
+  border: 2px solid rgb(139, 9, 9);
+  width: 12.5em;
+  font-size: 12px;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  text-align: center;
+  border-radius: 5px;
+  background-color: #fff;
+  z-index: 10;
+}
+
+/*  체크박스 커스텀 */
+
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  position: relative;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  outline: none !important;
+  border: 1px solid #eeeeee;
+  border-radius: 5px;
+  background: #fbfbfb;
+}
+
+input[type="checkbox"]::before {
+  content: "\2713";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  overflow: hidden;
+  transform: scale(0) translate(-50%, -50%);
+  line-height: 1;
+}
+
+input[type="checkbox"]:hover {
+  border-color: rgba(170, 170, 170, 0.5);
+}
+
+input[type="checkbox"]:checked {
+  background-color: rgb(139, 9, 9);
+  border-color: rgba(255, 255, 255, 0.3);
+  color: white;
+}
+
+input[type="checkbox"]:checked::before {
+  border-radius: 2px;
+  transform: scale(1) translate(-50%, -50%);
+}
+/* 라디오 체크타입 커스텀 */
+
+input[type="radio"] {
+  -webkit-appearance: none;
+  position: relative;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  outline: none !important;
+  border: 1px solid #eeeeee;
+  border-radius: 45px;
+  background: #fbfbfb;
+}
+
+input[type="radio"]::before {
+  content: "\2713";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  overflow: hidden;
+  transform: scale(0) translate(-50%, -50%);
+  line-height: 1;
+}
+
+input[type="radio"]:hover {
+  border-color: rgba(170, 170, 170, 0.5);
+}
+
+input[type="radio"]:checked {
+  background-color: rgb(139, 9, 9);
+  border-color: rgba(255, 255, 255, 0.3);
+  color: white;
+}
+
+input[type="radio"]:checked::before {
+  border-radius: 2px;
+  transform: scale(1) translate(-50%, -50%);
+}

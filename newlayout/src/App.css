@@ -1,6 +1,7 @@
 .mg-b5 {
   margin-bottom: 5px;
 }
+
 /* content */
 .content-wrap {
   height: auto;
@@ -27,6 +28,7 @@
   margin: 20px 0 10px 0;
   font-size: 20px;
 }
+
 .content-box {
   border-radius: 10px;
   background-color: rgb(223, 223, 223);
@@ -58,6 +60,7 @@
 }
 
 /* 사이드 메뉴 열고 닫기 */
+
 .sideButton {
   position: absolute;
   top: 105px;
@@ -83,9 +86,11 @@
   content: ">";
   color: #fff;
 }
+
 .itemList-hidden {
   display: none;
 }
+
 /* 사이드 목록 모두 열고 닽기 */
 .itemListButton {
   position: absolute;
@@ -177,6 +182,7 @@
   justify-content: flex-start;
   line-height: 2.5;
   background-color: #444;
+  height: 100%;
 }
 #header .nav ul .navlist {
   background-color: #444;
@@ -187,6 +193,7 @@
   width: 97px;
   text-align: center;
 }
+
 .navlist {
   background-color: #444;
   min-width: 97px;
@@ -237,7 +244,7 @@
   font-size: 14px;
 }
 .topLinkText {
-  font-size: 15px;
+  font-size: 14px;
   color: #ffffff;
 }
 
@@ -254,6 +261,24 @@
 .gnb-sideMenu-ac {
   display: none;
   visibility: hidden;
+}
+.sideMenuName {
+  height: 90px;
+  text-align: center;
+  line-height: 1;
+  font-size: 20px;
+  font-weight: 800;
+}
+.sideMenuName h2 {
+  font-family: "Noto-Sans-CJK-KR";
+  font-size: 18px;
+  padding: 40px 0 15px 0;
+}
+.sideMenuText {
+  font-size: 13px;
+}
+.sideMenuText:hover {
+  text-decoration: underline;
 }
 
 .listname {
@@ -355,7 +380,7 @@ input[type="checkbox"]:hover {
 }
 
 input[type="checkbox"]:checked {
-  background-color: #00365a;
+  background-color: rgb(185, 13, 13);
   border-color: rgba(255, 255, 255, 0.3);
   color: white;
 }

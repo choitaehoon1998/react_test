@@ -1,5 +1,5 @@
 import ReactModal from "react-modal";
-
+import React from "react";
 
 
 const ChildModal = ({openModal,onChildSubmit,onChildCancel}) => {
