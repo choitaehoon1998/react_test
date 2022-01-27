@@ -7,8 +7,8 @@ export default function HOMESIDEMENU() {
   const [side, setSide] = useState(0);
   const [itemList, setItemList] = useState(0);
   const [item1, setItem1] = useState(0);
-  const [item2, setItem2] = useState(0);
-  const [item3, setItem3] = useState(0);
+  // const [item2, setItem2] = useState(0);
+  // const [item3, setItem3] = useState(0);
 
   return (
     <>
@@ -30,13 +30,13 @@ export default function HOMESIDEMENU() {
             if (itemList === 0) {
               setItemList(1);
               setItem1(1);
-              setItem2(1);
-              setItem3(1);
+              // setItem2(1);
+              // setItem3(1);
             } else if (itemList === 1) {
               setItemList(0);
               setItem1(0);
-              setItem2(0);
-              setItem3(0);
+              // setItem2(0);
+              // setItem3(0);
             }
           }}
         ></div>
