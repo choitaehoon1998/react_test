@@ -8,7 +8,7 @@ import { CountingStar } from "../component/components/countingstar";
 import Tags from "../component/components/tags";
 import {DropZone} from "../component/components/dropzone";
 import DatePickerComponent from "../component/components/dataPickerComponent";
-import SelectDate from "../component/components/dateRangeview"
+import DateRange from "../component/components/dateRange";
 
 export default function Components() {
     return( 
@@ -53,7 +53,7 @@ export default function Components() {
 
                             <div className="form-groups">
                             <p>Date Range</p>
-                                <SelectDate></SelectDate>
+                                <DateRange></DateRange>
                             </div>
                                
                         </div>

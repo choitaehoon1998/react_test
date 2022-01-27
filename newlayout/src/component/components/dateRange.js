@@ -1,8 +1,9 @@
 import React,{ useState} from "react";
 import DatePicker from "react-datepicker";
-import "./date.css";
+import "./compostyle.css";
+import "./date.css"; 
 
- const SelectDate = () => {
+ const DateRange = () => {
     const [startDate, setStartDate] = useState(new Date());
   const [endDate, setEndDate] = useState(new Date());
     return (
@@ -26,4 +27,4 @@ import "./date.css";
       </>
     );
   };
-  export default SelectDate;
+  export default DateRange;
