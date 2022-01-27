@@ -61,7 +61,7 @@ export default function HOMESIDEMENU() {
         <ul className={item1 === 1 ? "listGroup" : "listGroup-hidden"}>
           <SideMenuList link="/Buttons" name="버튼"></SideMenuList>
           <SideMenuList link="/home/modal" name="modal"></SideMenuList>
-          <SideMenuList link="/" name="#"></SideMenuList>
+          <SideMenuList link="/Validation" name="Validation"></SideMenuList>
           <SideMenuList link="" name="#"></SideMenuList>
           <SideMenuList link="" name="#"></SideMenuList>
           <SideMenuList link="/Components" name="컴포넌트"></SideMenuList>
