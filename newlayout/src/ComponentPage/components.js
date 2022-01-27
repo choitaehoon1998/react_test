@@ -45,15 +45,17 @@ export default function Components() {
                             <label>
                                 Date Picker
                             </label>
-
-                            <span>Date with Time</span>
+                            
                             <div className="form-groups">
+                            <p>Date with Time</p>
                                 <DatePickerComponent></DatePickerComponent>
                             </div>
 
-                            <span>Date Range</span>
-                            <br></br>
+                            <div className="form-groups">
+                            <p>Date Range</p>
                                 <SelectDate></SelectDate>
+                            </div>
+                               
                         </div>
                     </div>
 
