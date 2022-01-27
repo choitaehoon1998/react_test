@@ -1,15 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 
-const ZipInput = (props) => {
+function ZipInput() {
+  const [zip, setzip] = useState("");
+
+  const handleChange = ({ target: { value } }) => setzip(value);
   return (
     <>
       <div>
-        <input type="text" className="form-control" name="zipinput" required>
-          {props.children}
-        </input>
+        <input
+          type="text"
+          className="form-control"
+          name="zipinput"
+          value={zip}
+          onChange={handleChange}
+          required
+        />
       </div>
     </>
   );
-};
+}
 
 export default ZipInput;

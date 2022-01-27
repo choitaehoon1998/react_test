@@ -1,15 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 
-const City = (props) => {
+function City() {
+  const [city, setCity] = useState("");
+  const handleChange = ({ target: { value } }) => setCity(value);
   return (
-    <>
-      <div>
-        <input type="text" className="form-control" name="city" required>
-          {props.children}
-        </input>
-      </div>
-    </>
+    <input
+      type="text"
+      name="city"
+      value={city}
+      onChange={handleChange}
+      className="form-control"
+    />
   );
-};
+}
 
 export default City;

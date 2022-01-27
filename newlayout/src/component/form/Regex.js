@@ -1,15 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 
-const Regex = (props) => {
+function Regex() {
+  const [regex, setRegex] = useState("");
+
+  const handleChange = ({ target: { value } }) => setRegex(value);
+
   return (
-    <>
-      <div>
-        <input type="text" className="form-control" name="Regex" required>
-          {props.children}
-        </input>
-      </div>
-    </>
+    <input
+      type="text"
+      name="regex"
+      value={regex}
+      onChange={handleChange}
+      className="form-control"
+      required
+    />
   );
-};
+}
 
 export default Regex;

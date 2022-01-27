@@ -1,15 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 
-const Street = (props) => {
+function Street() {
+  const [street, setStreet] = useState("");
+
+  const handleChange = ({ target: { value } }) => setStreet(value);
+
   return (
-    <>
-      <div>
-        <input type="text" className="form-control" name="street" required>
-          {props.children}
-        </input>
-      </div>
-    </>
+    <input
+      type="text"
+      name="street"
+      value={street}
+      onChange={handleChange}
+      className="form-control"
+      required
+    />
   );
-};
+}
 
 export default Street;

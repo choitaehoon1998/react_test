@@ -31,7 +31,7 @@ import Mininput from "../component/form/Mininput";
 import MaxInput from "../component/form/maxinput";
 import Regex from "../component/form/Regex";
 import Street from "../component/form/street";
-import Suite from "../component/form/Regex copy";
+import Suite from "../component/form/Suite";
 import City from "../component/form/city";
 import StateInput from "../component/form/state";
 import ZipInput from "../component/form/zipinput";
@@ -216,7 +216,15 @@ export default function Validation() {
                       <Tagsinput />
                     </div>
                     <div className="form-groups has-float-label">
-                      <label className="lable-font">Date</label>
+                      <label
+                        className="lable-font"
+                        style={{
+                          position: "absolute",
+                          top: "5px",
+                        }}
+                      >
+                        Date
+                      </label>
                       <CustomDatepicker />
                     </div>
                     <div className="form-groups has-float-label">
@@ -229,7 +237,7 @@ export default function Validation() {
                 </div>
               </div>
 
-              {/* Top Labels Over Line */}
+              {/* Top Labels In Input */}
               <div className="form-frame frame">
                 <div className="card">
                   <form action="#">

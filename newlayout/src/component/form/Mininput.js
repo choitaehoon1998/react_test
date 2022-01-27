@@ -1,15 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 
-const Mininput = (props) => {
+function Mininput() {
+  const [min, setMin] = useState("");
+
+  const handleChange = ({ target: { value } }) => setMin(value);
+
   return (
-    <>
-      <div>
-        <input type="text" className="form-control" required>
-          {props.children}
-        </input>
-      </div>
-    </>
+    <input
+      type="text"
+      name="min"
+      value={min}
+      onChange={handleChange}
+      className="form-control"
+      required
+    />
   );
-};
+}
 
 export default Mininput;

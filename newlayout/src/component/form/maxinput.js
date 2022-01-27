@@ -1,15 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 
-const MaxInput = (props) => {
+function MaxInput() {
+  const [max, setMax] = useState("");
+
+  const handleChange = ({ target: { value } }) => setMax(value);
+
   return (
-    <>
-      <div>
-        <input type="text" className="form-control" required>
-          {props.children}
-        </input>
-      </div>
-    </>
+    <input
+      type="text"
+      name="max"
+      value={max}
+      onChange={handleChange}
+      className="form-control"
+      required
+    />
   );
-};
+}
 
 export default MaxInput;
