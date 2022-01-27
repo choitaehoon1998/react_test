@@ -62,55 +62,6 @@
   padding: 5px;
 }
 
-/* Switch 스타일 */
-
-#switch {
-  display: none;
-}
-.label-position {
-  display: block;
-  margin-bottom: 15px;
-}
-
-.switch_label {
-  position: relative;
-  cursor: pointer;
-  display: inline-block;
-  width: 58px;
-  height: 28px;
-  background: #fff;
-  border: 2px solid rgb(185, 13, 13);
-  border-radius: 20px;
-  transition: 0.2s;
-  margin-top: 10px;
-}
-.switch_label:hover {
-  background: #efefef;
-}
-.onf_btn {
-  position: absolute;
-  top: 4px;
-  left: 3px;
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  border-radius: 20px;
-  background: rgb(185, 13, 13);
-  transition: 0.2s;
-}
-#switch:checked + .switch_label {
-  background: rgb(139, 9, 9);
-  border: 2px solid rgb(139, 9, 9);
-}
-
-#switch:checked + .switch_label:hover {
-  background: rgb(192, 14, 14);
-}
-#switch:checked + .switch_label .onf_btn {
-  left: 34px;
-  background: #fff;
-  box-shadow: 1px 2px 3px #00000020;
-}
 
 /* 데이커 스타일 */
 .react-datePicker-wrapper {
@@ -209,10 +160,7 @@
   padding: 1.7rem 0rem 0.2rem 0.4rem !important;
 }
 
-.react-tagsinput {
-  padding: 1.7rem 0rem 0.2rem 0.4rem !important;
-  width: 100% !important;
-}
+
 */
 
 /* Tooltip */
