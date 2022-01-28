@@ -21,7 +21,7 @@ export default function ToolTipPosition() {
                   setToolTip(1);
                 }}
               ></input>
-              <div className={toolTip == 1 ? "feedBackActive" : "feedBack"}>
+              <div className={toolTip === 1 ? "feedBackActive" : "feedBack"}>
                 Please enter your email
               </div>
             </div>
@@ -36,7 +36,7 @@ export default function ToolTipPosition() {
                 }}
               ></input>
               <div
-                className={toolTip == 2 ? "feedBackActive col2" : "feedBack"}
+                className={toolTip === 2 ? "feedBackActive col2" : "feedBack"}
               >
                 Please enter your email
               </div>
@@ -52,7 +52,7 @@ export default function ToolTipPosition() {
                 }}
               ></input>
               <div
-                className={toolTip == 3 ? "feedBackActive col3" : "feedBack"}
+                className={toolTip === 3 ? "feedBackActive col3" : "feedBack"}
               >
                 Please enter your email
               </div>
@@ -68,7 +68,7 @@ export default function ToolTipPosition() {
                 }}
               ></input>
               <div
-                className={toolTip == 4 ? "feedBackActive col4" : "feedBack"}
+                className={toolTip === 4 ? "feedBackActive col4" : "feedBack"}
               >
                 Please enter your email
               </div>
@@ -84,7 +84,7 @@ export default function ToolTipPosition() {
                 }}
               ></input>
               <div
-                className={toolTip == 5 ? "feedBackActive col5" : "feedBack"}
+                className={toolTip === 5 ? "feedBackActive col5" : "feedBack"}
               >
                 Please enter your email
               </div>
@@ -100,7 +100,7 @@ export default function ToolTipPosition() {
                 }}
               ></input>
               <div
-                className={toolTip == 6 ? "feedBackActive col6" : "feedBack"}
+                className={toolTip === 6 ? "feedBackActive col6" : "feedBack"}
               >
                 Please enter your email
               </div>
@@ -116,7 +116,7 @@ export default function ToolTipPosition() {
                 }}
               ></input>
               <div
-                className={toolTip == 7 ? "feedBackActive col7" : "feedBack"}
+                className={toolTip === 7 ? "feedBackActive col7" : "feedBack"}
               >
                 Please enter your email
               </div>

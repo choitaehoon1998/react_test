@@ -50,7 +50,7 @@ const SearchBar = ({ results, keyword, updateField }) => {
     return (
     <div
         onClick={() => updateText(name)}
-        className={`search-preview ${index == 0 ? "start" : ""}`}
+        className={`search-preview ${index === 0 ? "start" : ""}`}
     >
         <div className="first">
         <p className="name">{name}</p>

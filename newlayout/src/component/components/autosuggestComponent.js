@@ -21,14 +21,14 @@ class autosuggestComponent extends Component {
     matchName = (name, keyword) => {
         var keyLen = keyword.length;
         name = name.toLowerCase().substring(0, keyLen);
-        if (keyword == "") return false;
-        return name == keyword.toLowerCase();
+        if (keyword === "") return false;
+        return name === keyword.toLowerCase();
     };
     
     onSearch = async text => {
         let {data} = this.state;
 
-        var results = data.filter(item => true == this.matchName(item.name, text));
+        var results = data.filter(item => true === this.matchName(item.name, text));
 
         this.setState({results})
     };

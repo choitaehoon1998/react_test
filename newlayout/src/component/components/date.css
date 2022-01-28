@@ -12,6 +12,13 @@
   top: 6px;
   width: 9px;
 }
+input {
+  padding-left: 4px;
+  color: #000;
+  border: 1px solid rgb(139, 9, 9);
+  border-radius: 10px;
+  background-color: #fafafada;
+}
 .react-datepicker-popper[data-placement^=top] .react-datepicker__triangle, .react-datepicker-popper[data-placement^=bottom] .react-datepicker__triangle {
   margin-left: -4px;
   position: absolute;
@@ -404,14 +411,14 @@
 .react-datepicker__quarter--in-selecting-range,
 .react-datepicker__quarter--in-range {
   border-radius: 0.3rem;
-  background-color: #216ba5;
+  background-color: rgb(185, 13, 13);
   color: #fff;
 }
 .react-datepicker__month--selected:hover, .react-datepicker__month--in-selecting-range:hover, .react-datepicker__month--in-range:hover,
 .react-datepicker__quarter--selected:hover,
 .react-datepicker__quarter--in-selecting-range:hover,
 .react-datepicker__quarter--in-range:hover {
-  background-color: #1d5d90;
+  background-color: rgb(255, 166, 166);
 }
 .react-datepicker__month--disabled,
 .react-datepicker__quarter--disabled {
@@ -500,14 +507,14 @@
 .react-datepicker__quarter-text--keyboard-selected,
 .react-datepicker__year-text--keyboard-selected {
   border-radius: 0.3rem;
-  background-color: #2a87d0;
+  background-color: rgb(185, 13, 13);
   color: #fff;
 }
 .react-datepicker__day--keyboard-selected:hover,
 .react-datepicker__month-text--keyboard-selected:hover,
 .react-datepicker__quarter-text--keyboard-selected:hover,
 .react-datepicker__year-text--keyboard-selected:hover {
-  background-color: #1d5d90;
+  background-color: rgb(255, 166, 166);
 }
 .react-datepicker__day--in-selecting-range:not(.react-datepicker__day--in-range,
 .react-datepicker__month-text--in-range,
@@ -565,7 +572,7 @@
 .react-datepicker__quarter-text.react-datepicker__month--in-range:hover,
 .react-datepicker__quarter-text.react-datepicker__quarter--selected:hover,
 .react-datepicker__quarter-text.react-datepicker__quarter--in-range:hover {
-  background-color: #216ba5;
+  background-color: rgb(255, 166, 166);
 }
 .react-datepicker__month-text:hover,
 .react-datepicker__quarter-text:hover {

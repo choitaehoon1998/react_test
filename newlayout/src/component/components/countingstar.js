@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react";
+import React, {useState} from "react";
 import { FaStar } from "react-icons/fa";
 import "./compostyle.css";
 
@@ -16,13 +16,13 @@ export const CountingStar = () => {
         
     };
 
-    useEffect(() => {
-        sendReview();
-    }, [clicked]);
+    // useEffect(() => {
+    //     sendReview();
+    // }, [clicked]);
 
-    const sendReview = () =>{
-        let score = clicked.filter(Boolean).length;
-    };
+    // const sendReview = () =>{
+    //     let score = clicked.filter(Boolean).length;
+    // };
     console.log(clicked);
     
     return(
