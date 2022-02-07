@@ -47,7 +47,7 @@ export default function Validation() {
           </div>
 
           <div className="main-flex">
-            <div className="left-frame">
+            <div className="left-frame1">
               <label>Formik Validation</label>
 
               {/* form 기본 */}
@@ -270,7 +270,7 @@ export default function Validation() {
             </div>
 
             {/* 오른쪽 프레임 */}
-            <div className="right-frame">
+            <div className="right-frame1">
               <label>Availity Reactstrap Validation</label>
 
               {/* Basic */}

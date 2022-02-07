@@ -11,7 +11,7 @@ function NameInput() {
         name="name"
         value={name}
         onChange={handleChange}
-        className="form-control"
+        className="form-control1"
       />
     </>
   );

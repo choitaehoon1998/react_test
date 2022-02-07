@@ -20,26 +20,26 @@
 }
 
 /*  왼쪽 프레임 */
-.left-frame {
+.left-frame1 {
   position: relative;
   padding: 0 1em;
   margin-right: 10px;
   flex: 1;
 }
 
-.left-frame > label {
+.left-frame1 > label {
   margin-bottom: 50px;
   font-size: 26px;
 }
 
 /* 오른쪽 프레임 */
 
-.right-frame {
+.right-frame1 {
   position: relative;
   padding: 0 1em;
   flex: 1;
 }
-.right-frame > label {
+.right-frame1 > label {
   margin-bottom: 50px;
   font-size: 26px;
 }

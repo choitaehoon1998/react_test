@@ -11,7 +11,7 @@ function Mininput() {
       name="min"
       value={min}
       onChange={handleChange}
-      className="form-control"
+      className="form-control1"
       required
     />
   );

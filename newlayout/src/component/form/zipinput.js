@@ -9,7 +9,7 @@ function ZipInput() {
       <div>
         <input
           type="text"
-          className="form-control"
+          className="form-control1"
           name="zipinput"
           value={zip}
           onChange={handleChange}

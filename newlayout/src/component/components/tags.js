@@ -1,10 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import TagsInput from "react-tagsinput";
-import "../components/compostyle.css";
-import { Formik, Form } from "formik";
+import "./compostyle.css";
+import { Formik, Form, Field, ErrorMessage } from "formik";
 
-export default class Tagsinput extends React.Component {
+export default class App extends React.Component {
   constructor() {
     super();
     this.state = { tags: [] };
@@ -21,10 +21,10 @@ export default class Tagsinput extends React.Component {
       <Formik
         initialValues={this.state}
         onSubmit={this.onSubmit}
-        render={({ 
-          values, 
-          handleSubmit, 
-          setFieldValue 
+        render={({
+          values,
+          handleSubmit,
+          setFieldValue,
         }) => (
           <Form onSubmit={handleSubmit} noValidate name="simpleForm">
             <TagsInput
@@ -43,4 +43,4 @@ export default class Tagsinput extends React.Component {
 }
 
 const rootElement = document.getElementById("root");
-ReactDOM.render(<Tagsinput />, rootElement);
+ReactDOM.render(<App />, rootElement);

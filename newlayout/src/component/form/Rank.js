@@ -9,7 +9,7 @@ function Rank() {
       name="rank"
       value={rank}
       onChange={handleChange}
-      className="form-control"
+      className="form-control1"
     />
   );
 }

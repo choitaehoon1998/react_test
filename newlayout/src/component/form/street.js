@@ -11,7 +11,7 @@ function Street() {
       name="street"
       value={street}
       onChange={handleChange}
-      className="form-control"
+      className="form-control1"
       required
     />
   );
